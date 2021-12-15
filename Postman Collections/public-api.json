@@ -34188,7 +34188,7 @@
                                     "in": "header"
                                   }
                                 },
-                                "method": "GET",
+                                "method": "POST",
                                 "header": [
                                   {
                                     "key": "X-Department",
@@ -92693,7 +92693,7 @@
   ],
   "variable": [
     {
-      "id": "a31c70ae-e12f-4cf2-a110-b3a38541c6c3",
+      "id": "bceaf9d4-ed1b-415f-947a-3bea2e850daf",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
