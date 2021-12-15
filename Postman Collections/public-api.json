@@ -34157,27 +34157,7 @@
                             "value": "ea"
                           }
                         ],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions?limit=ea&page=ea",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions"
-                          ],
-                          "query": [
-                            {
-                              "key": "limit",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "page",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/permissions/service-names"
                       },
                       "response": [
                         {
@@ -93403,7 +93383,7 @@
   ],
   "variable": [
     {
-      "id": "3c0927e4-efa9-4cc5-890f-e57f1032bfca",
+      "id": "19ce0531-1465-4897-adee-120e63b11b51",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
