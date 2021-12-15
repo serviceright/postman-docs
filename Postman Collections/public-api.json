@@ -34127,65 +34127,6 @@
                       ]
                     },
                     {
-                      "name": "/system/authorization/permissions/service-names Copy",
-                      "id": "a004d78b-d43a-4b66-9e8e-d664ca146a0b",
-                      "protocolProfileBehavior": {
-                        "disableBodyPruning": true
-                      },
-                      "request": {
-                        "method": "OPTIONS",
-                        "header": [],
-                        "url": "{{baseUrl}}/system/authorization/permissions/service-names"
-                      },
-                      "response": [
-                        {
-                          "id": "d0ff3c85-d869-4a4e-84b3-63c075979382",
-                          "name": "200 response",
-                          "originalRequest": {
-                            "method": "OPTIONS",
-                            "header": [],
-                            "url": "{{baseUrl}}/system/authorization/permissions/service-names"
-                          },
-                          "status": "OK",
-                          "code": 200,
-                          "_postman_previewlanguage": "json",
-                          "header": [
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Origin",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Methods",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Max-Age",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Headers",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "responseTime": null,
-                          "body": "{}"
-                        }
-                      ]
-                    },
-                    {
                       "name": "/system/authorization/permissions/service-names",
                       "id": "7c558178-3252-4ff1-8995-7aa54faa181a",
                       "protocolProfileBehavior": {
@@ -34266,6 +34207,88 @@
                                 "url": "{{baseUrl}}/system/authorization/permissions/service-names"
                               },
                               "response": []
+                            },
+                            {
+                              "name": "/system/authorization/permissions/service-names Copy",
+                              "id": "a004d78b-d43a-4b66-9e8e-d664ca146a0b",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "method": "OPTIONS",
+                                "header": [],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "role",
+                                      "value": null
+                                    },
+                                    {
+                                      "key": "permission",
+                                      "value": null
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": [
+                                {
+                                  "id": "d0ff3c85-d869-4a4e-84b3-63c075979382",
+                                  "name": "200 response",
+                                  "originalRequest": {
+                                    "method": "OPTIONS",
+                                    "header": [],
+                                    "url": "{{baseUrl}}/system/authorization/permissions/service-names"
+                                  },
+                                  "status": "OK",
+                                  "code": 200,
+                                  "_postman_previewlanguage": "json",
+                                  "header": [
+                                    {
+                                      "disabled": false,
+                                      "description": "",
+                                      "key": "Access-Control-Allow-Origin",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "description": "",
+                                      "key": "Access-Control-Allow-Methods",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "description": "",
+                                      "key": "Access-Control-Max-Age",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "description": "",
+                                      "key": "Access-Control-Allow-Headers",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "cookie": [],
+                                  "responseTime": null,
+                                  "body": "{}"
+                                }
+                              ]
                             }
                           ],
                           "id": "143165f2-3b3d-49d9-aaef-9d97ace1e2d2"
@@ -92624,7 +92647,7 @@
   ],
   "variable": [
     {
-      "id": "241ecc1c-140a-40cc-a27c-438262ec0202",
+      "id": "e603ec90-08e4-4846-95d3-5bfa75385c0c",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
