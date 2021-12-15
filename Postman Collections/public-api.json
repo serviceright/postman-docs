@@ -34065,8 +34065,68 @@
                   "id": "e798d762-48ef-4a56-ba29-7f721f0fed64"
                 },
                 {
-                  "name": "New Folder",
-                  "item": [],
+                  "name": "service-names",
+                  "item": [
+                    {
+                      "name": "/system/authorization/permissions Copy",
+                      "id": "11ad2b83-16bf-4e64-90ec-de5555163533",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "OPTIONS",
+                        "header": [],
+                        "url": "{{baseUrl}}/system/authorization/permissions"
+                      },
+                      "response": [
+                        {
+                          "id": "3cdce6dd-e2f2-4327-ad70-2080b727e019",
+                          "name": "200 response",
+                          "originalRequest": {
+                            "method": "OPTIONS",
+                            "header": [],
+                            "url": "{{baseUrl}}/system/authorization/permissions"
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Origin",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Methods",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Max-Age",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Headers",
+                              "value": "ea"
+                            },
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{}"
+                        }
+                      ]
+                    }
+                  ],
                   "id": "8e5903dd-ad11-4818-8806-13a3a1b7f378"
                 },
                 {
@@ -92417,7 +92477,7 @@
   ],
   "variable": [
     {
-      "id": "bce58e06-7315-4893-b3f6-381c5426c88a",
+      "id": "8405a7d1-8efa-413d-ac96-c85c8aab388f",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
