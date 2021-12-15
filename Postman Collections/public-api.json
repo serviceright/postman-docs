@@ -34068,7 +34068,7 @@
                   "name": "service-names",
                   "item": [
                     {
-                      "name": "/system/authorization/permissions Copy",
+                      "name": "/system/authorization/permissions/service-names",
                       "id": "11ad2b83-16bf-4e64-90ec-de5555163533",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -93403,7 +93403,7 @@
   ],
   "variable": [
     {
-      "id": "0f70ff94-a53e-443d-91e8-acb3429c50d4",
+      "id": "44e0799a-0755-4986-8d1e-1eed42436bd8",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
