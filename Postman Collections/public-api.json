@@ -34471,7 +34471,7 @@
                           "name": "{permission}",
                           "item": [
                             {
-                              "name": "/system/authorization/permissions/users/{user}/{permission}",
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
                               "id": "1799a6a0-61cf-4002-877a-451c17063fff",
                               "protocolProfileBehavior": {
                                 "disableBodyPruning": true
@@ -34529,7 +34529,7 @@
                               "response": []
                             },
                             {
-                              "name": "/system/authorization/permissions/users/{user}/{permission}",
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
                               "id": "96a41af6-7f18-4bb3-80e2-8a88506decd0",
                               "protocolProfileBehavior": {
                                 "disableBodyPruning": true
@@ -34587,7 +34587,7 @@
                               "response": []
                             },
                             {
-                              "name": "/system/authorization/permissions/users/{user}/{permission}",
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
                               "id": "07db18dd-d5ff-40dd-a4c3-c52bd45c915a",
                               "protocolProfileBehavior": {
                                 "disableBodyPruning": true
@@ -34645,7 +34645,7 @@
                               "response": []
                             },
                             {
-                              "name": "/system/authorization/permissions/users/{user}/{permission}",
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
                               "id": "e380d3a0-7f5a-43f8-b744-126cc0993229",
                               "protocolProfileBehavior": {
                                 "disableBodyPruning": true
@@ -34686,7 +34686,7 @@
                                     "method": "OPTIONS",
                                     "header": [],
                                     "url": {
-                                      "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
+                                      "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
                                       "host": [
                                         "{{baseUrl}}"
                                       ],
@@ -34694,13 +34694,13 @@
                                         "system",
                                         "authorization",
                                         "permissions",
-                                        "users",
-                                        ":user",
+                                        "roles",
+                                        ":role",
                                         ":permission"
                                       ],
                                       "variable": [
                                         {
-                                          "key": "user",
+                                          "key": "role",
                                           "value": "2"
                                         },
                                         {
@@ -93106,7 +93106,7 @@
   ],
   "variable": [
     {
-      "id": "8ee5074f-c48c-441e-afe9-0713ee9e7270",
+      "id": "60ec32ed-80fc-427e-a05a-2626c174749e",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
