@@ -34168,8 +34168,14 @@
                   "name": "roles",
                   "item": [
                     {
-                      "name": "New Folder",
-                      "item": [],
+                      "name": "{role}",
+                      "item": [
+                        {
+                          "name": "New Folder",
+                          "item": [],
+                          "id": "143165f2-3b3d-49d9-aaef-9d97ace1e2d2"
+                        }
+                      ],
                       "id": "2b502ffb-449f-4a56-a990-ab6448ef6e64"
                     }
                   ],
@@ -92523,7 +92529,7 @@
   ],
   "variable": [
     {
-      "id": "c7cb7b9c-4331-4e71-8500-0a7a44d8417f",
+      "id": "ac9c8d02-065f-49f8-a8da-b0be97594447",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
