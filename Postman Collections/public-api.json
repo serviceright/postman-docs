@@ -34066,67 +34066,7 @@
                 },
                 {
                   "name": "service-names",
-                  "item": [
-                    {
-                      "name": "/system/authorization/permissions Copy",
-                      "id": "11ad2b83-16bf-4e64-90ec-de5555163533",
-                      "protocolProfileBehavior": {
-                        "disableBodyPruning": true
-                      },
-                      "request": {
-                        "method": "OPTIONS",
-                        "header": [],
-                        "url": "{{baseUrl}}/system/authorization/permissions"
-                      },
-                      "response": [
-                        {
-                          "id": "3cdce6dd-e2f2-4327-ad70-2080b727e019",
-                          "name": "200 response",
-                          "originalRequest": {
-                            "method": "OPTIONS",
-                            "header": [],
-                            "url": "{{baseUrl}}/system/authorization/permissions"
-                          },
-                          "status": "OK",
-                          "code": 200,
-                          "_postman_previewlanguage": "json",
-                          "header": [
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Origin",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Methods",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Max-Age",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Headers",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "responseTime": null,
-                          "body": "{}"
-                        }
-                      ]
-                    }
-                  ],
+                  "item": [],
                   "id": "8e5903dd-ad11-4818-8806-13a3a1b7f378"
                 },
                 {
@@ -92477,7 +92417,7 @@
   ],
   "variable": [
     {
-      "id": "6cfe6b6f-00ec-494c-8bdd-e96d4abc517d",
+      "id": "26bfb81a-213b-403b-894e-27acb2fe452e",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
