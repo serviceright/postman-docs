@@ -34645,7 +34645,7 @@
                               "response": []
                             },
                             {
-                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
+                              "name": "/system/authorization/permissions/users/{user}/{permission}",
                               "id": "e380d3a0-7f5a-43f8-b744-126cc0993229",
                               "protocolProfileBehavior": {
                                 "disableBodyPruning": true
@@ -34654,7 +34654,7 @@
                                 "method": "OPTIONS",
                                 "header": [],
                                 "url": {
-                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
                                   "host": [
                                     "{{baseUrl}}"
                                   ],
@@ -34662,18 +34662,16 @@
                                     "system",
                                     "authorization",
                                     "permissions",
-                                    "roles",
-                                    ":role",
+                                    "users",
+                                    ":user",
                                     ":permission"
                                   ],
                                   "variable": [
                                     {
-                                      "id": "a5f449a2-b24c-4b1b-bfb4-e5f678a34f6a",
-                                      "key": "role",
+                                      "key": "user",
                                       "value": "ea"
                                     },
                                     {
-                                      "id": "8ecd902b-390c-4476-a249-c00d6db2b25c",
                                       "key": "permission",
                                       "value": "ea"
                                     }
@@ -34688,7 +34686,7 @@
                                     "method": "OPTIONS",
                                     "header": [],
                                     "url": {
-                                      "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                      "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
                                       "host": [
                                         "{{baseUrl}}"
                                       ],
@@ -34696,13 +34694,13 @@
                                         "system",
                                         "authorization",
                                         "permissions",
-                                        "roles",
-                                        ":role",
+                                        "users",
+                                        ":user",
                                         ":permission"
                                       ],
                                       "variable": [
                                         {
-                                          "key": "role",
+                                          "key": "user",
                                           "value": "2"
                                         },
                                         {
@@ -93108,7 +93106,7 @@
   ],
   "variable": [
     {
-      "id": "9ecb927e-4b6b-4d8d-b369-ebd23731a883",
+      "id": "2b7512f1-7d8c-485c-8fd9-f5c235a07c70",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
