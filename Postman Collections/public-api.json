@@ -34232,6 +34232,66 @@
                               "response": []
                             },
                             {
+                              "name": "/system/authorization/permissions/service-names Copy 2",
+                              "id": "380fadde-9d43-4e84-b5b2-83eac920352d",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "auth": {
+                                  "type": "apikey",
+                                  "apikey": {
+                                    "key": "Authorization",
+                                    "value": true,
+                                    "in": "header"
+                                  }
+                                },
+                                "method": "POST",
+                                "header": [
+                                  {
+                                    "key": "X-Department",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "key": "Accept-Language",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "description": "(Required) ",
+                                    "key": "Authorization",
+                                    "value": "ea"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "6dc68d50-4485-4620-ab98-eb881ea328df",
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "id": "c259d159-cb53-4186-948a-1a4926579988",
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": []
+                            },
+                            {
                               "name": "/system/authorization/permissions/service-names Copy",
                               "id": "a004d78b-d43a-4b66-9e8e-d664ca146a0b",
                               "protocolProfileBehavior": {
@@ -92693,7 +92753,7 @@
   ],
   "variable": [
     {
-      "id": "bceaf9d4-ed1b-415f-947a-3bea2e850daf",
+      "id": "5d21a955-ff4a-4784-b4ac-d68c1c1e715c",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
