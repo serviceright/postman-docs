@@ -34304,7 +34304,7 @@
                                     "in": "header"
                                   }
                                 },
-                                "method": "PUT",
+                                "method": "DELETE",
                                 "header": [
                                   {
                                     "key": "X-Department",
@@ -34335,12 +34335,10 @@
                                   ],
                                   "variable": [
                                     {
-                                      "id": "18c4623e-2f8c-4bff-92ab-2038c92b59a3",
                                       "key": "role",
                                       "value": "ea"
                                     },
                                     {
-                                      "id": "c4e1311c-9722-4e8a-be46-f92bcffe1453",
                                       "key": "permission",
                                       "value": "ea"
                                     }
@@ -34462,6 +34460,311 @@
                     }
                   ],
                   "id": "9d1c60e5-46bb-48e1-8916-e868808029e1"
+                },
+                {
+                  "name": "roles Copy",
+                  "item": [
+                    {
+                      "name": "{role}",
+                      "item": [
+                        {
+                          "name": "{permission}",
+                          "item": [
+                            {
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
+                              "id": "1799a6a0-61cf-4002-877a-451c17063fff",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "auth": {
+                                  "type": "apikey",
+                                  "apikey": {
+                                    "key": "Authorization",
+                                    "value": true,
+                                    "in": "header"
+                                  }
+                                },
+                                "method": "POST",
+                                "header": [
+                                  {
+                                    "key": "X-Department",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "key": "Accept-Language",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "description": "(Required) ",
+                                    "key": "Authorization",
+                                    "value": "ea"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "5f66abc9-4d0d-439d-89fc-1a891a4f8f3a",
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "id": "d969baeb-fb35-4a95-91e6-c1b4bde503c3",
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": []
+                            },
+                            {
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
+                              "id": "96a41af6-7f18-4bb3-80e2-8a88506decd0",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "auth": {
+                                  "type": "apikey",
+                                  "apikey": {
+                                    "key": "Authorization",
+                                    "value": true,
+                                    "in": "header"
+                                  }
+                                },
+                                "method": "PUT",
+                                "header": [
+                                  {
+                                    "key": "X-Department",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "key": "Accept-Language",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "description": "(Required) ",
+                                    "key": "Authorization",
+                                    "value": "ea"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "67dd3b7d-734a-44e3-924b-5e3f30d715d6",
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "id": "cbcce614-8b7b-492f-9e97-ac1d42d9aa7a",
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": []
+                            },
+                            {
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
+                              "id": "07db18dd-d5ff-40dd-a4c3-c52bd45c915a",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "auth": {
+                                  "type": "apikey",
+                                  "apikey": {
+                                    "key": "Authorization",
+                                    "value": true,
+                                    "in": "header"
+                                  }
+                                },
+                                "method": "DELETE",
+                                "header": [
+                                  {
+                                    "key": "X-Department",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "key": "Accept-Language",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "description": "(Required) ",
+                                    "key": "Authorization",
+                                    "value": "ea"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "4316e7b2-5d82-40e0-a1b8-871e015d6a41",
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "id": "01943065-fb24-43d4-a303-0a22cb518d91",
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": []
+                            },
+                            {
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
+                              "id": "e380d3a0-7f5a-43f8-b744-126cc0993229",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "method": "OPTIONS",
+                                "header": [],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "a5f449a2-b24c-4b1b-bfb4-e5f678a34f6a",
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "id": "8ecd902b-390c-4476-a249-c00d6db2b25c",
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": [
+                                {
+                                  "id": "fb50c406-e4d1-4916-994b-02ce71d7c48c",
+                                  "name": "200 response",
+                                  "originalRequest": {
+                                    "method": "OPTIONS",
+                                    "header": [],
+                                    "url": {
+                                      "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                      "host": [
+                                        "{{baseUrl}}"
+                                      ],
+                                      "path": [
+                                        "system",
+                                        "authorization",
+                                        "permissions",
+                                        "roles",
+                                        ":role",
+                                        ":permission"
+                                      ],
+                                      "variable": [
+                                        {
+                                          "key": "role",
+                                          "value": "2"
+                                        },
+                                        {
+                                          "key": "permission",
+                                          "value": "158"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "status": "OK",
+                                  "code": 200,
+                                  "_postman_previewlanguage": "json",
+                                  "header": [
+                                    {
+                                      "disabled": false,
+                                      "description": "",
+                                      "key": "Access-Control-Allow-Origin",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "description": "",
+                                      "key": "Access-Control-Allow-Methods",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "description": "",
+                                      "key": "Access-Control-Max-Age",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "disabled": false,
+                                      "description": "",
+                                      "key": "Access-Control-Allow-Headers",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "key": "Content-Type",
+                                      "value": "application/json"
+                                    }
+                                  ],
+                                  "cookie": [],
+                                  "responseTime": null,
+                                  "body": "{}"
+                                }
+                              ]
+                            }
+                          ],
+                          "id": "3418faa7-c572-4436-87de-f3751a09510d"
+                        }
+                      ],
+                      "id": "ef001843-64a1-496b-8143-fde6b5e53184"
+                    }
+                  ],
+                  "id": "f07ea1f8-6a82-4f84-a472-f02db1aa27b8"
                 },
                 {
                   "name": "/system/authorization/permissions",
@@ -92811,7 +93114,7 @@
   ],
   "variable": [
     {
-      "id": "b8e1e0d6-c668-414b-a113-8cf2b95b4ec3",
+      "id": "86307fda-8214-4447-9be1-463df5e017bd",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
