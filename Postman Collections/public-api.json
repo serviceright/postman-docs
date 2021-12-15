@@ -34076,7 +34076,7 @@
                       "request": {
                         "method": "OPTIONS",
                         "header": [],
-                        "url": "{{baseUrl}}/system/authorization/permissions"
+                        "url": "{{baseUrl}}/system/authorization/permissions/service-names"
                       },
                       "response": [
                         {
@@ -34085,7 +34085,7 @@
                           "originalRequest": {
                             "method": "OPTIONS",
                             "header": [],
-                            "url": "{{baseUrl}}/system/authorization/permissions"
+                            "url": "{{baseUrl}}/system/authorization/permissions/service-names"
                           },
                           "status": "OK",
                           "code": 200,
@@ -93403,7 +93403,7 @@
   ],
   "variable": [
     {
-      "id": "44e0799a-0755-4986-8d1e-1eed42436bd8",
+      "id": "9c76d4a1-2e9d-4764-850e-a8fc011798ea",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
