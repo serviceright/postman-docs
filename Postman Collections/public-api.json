@@ -34233,11 +34233,11 @@
                                   "variable": [
                                     {
                                       "key": "role",
-                                      "value": null
+                                      "value": "ea"
                                     },
                                     {
                                       "key": "permission",
-                                      "value": null
+                                      "value": "ea"
                                     }
                                   ]
                                 }
@@ -34249,7 +34249,30 @@
                                   "originalRequest": {
                                     "method": "OPTIONS",
                                     "header": [],
-                                    "url": "{{baseUrl}}/system/authorization/permissions/service-names"
+                                    "url": {
+                                      "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                      "host": [
+                                        "{{baseUrl}}"
+                                      ],
+                                      "path": [
+                                        "system",
+                                        "authorization",
+                                        "permissions",
+                                        "roles",
+                                        ":role",
+                                        ":permission"
+                                      ],
+                                      "variable": [
+                                        {
+                                          "key": "role",
+                                          "value": "2"
+                                        },
+                                        {
+                                          "key": "permission",
+                                          "value": "158"
+                                        }
+                                      ]
+                                    }
                                   },
                                   "status": "OK",
                                   "code": 200,
@@ -92647,7 +92670,7 @@
   ],
   "variable": [
     {
-      "id": "e603ec90-08e4-4846-95d3-5bfa75385c0c",
+      "id": "1824b1e1-099c-4283-9c80-c7122a98432c",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
