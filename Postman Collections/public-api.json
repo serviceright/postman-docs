@@ -34159,7 +34159,269 @@
                         ],
                         "url": "{{baseUrl}}/system/authorization/permissions/service-names"
                       },
-                      "response": []
+                      "response": [
+                        {
+                          "id": "005eb7c9-c431-4957-835b-725e5cdd356d",
+                          "name": "400 response",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              },
+                              {
+                                "key": "X-Department",
+                                "value": "ea"
+                              },
+                              {
+                                "key": "Accept-Language",
+                                "value": "ea"
+                              },
+                              {
+                                "description": "(Required) ",
+                                "key": "Authorization",
+                                "value": "ea"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/permissions?limit=ea&page=ea",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "permissions"
+                              ],
+                              "query": [
+                                {
+                                  "key": "limit",
+                                  "value": "ea"
+                                },
+                                {
+                                  "key": "page",
+                                  "value": "ea"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Bad Request",
+                          "code": 400,
+                          "_postman_previewlanguage": "text",
+                          "header": [
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Origin",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Methods",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Max-Age",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Headers",
+                              "value": "ea"
+                            },
+                            {
+                              "key": "Content-Type",
+                              "value": "text/plain"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": ""
+                        },
+                        {
+                          "id": "93b8ca2f-0af9-4428-a3b1-81e175809e9b",
+                          "name": "500 response",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              },
+                              {
+                                "key": "X-Department",
+                                "value": "ea"
+                              },
+                              {
+                                "key": "Accept-Language",
+                                "value": "ea"
+                              },
+                              {
+                                "description": "(Required) ",
+                                "key": "Authorization",
+                                "value": "ea"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/permissions?limit=ea&page=ea",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "permissions"
+                              ],
+                              "query": [
+                                {
+                                  "key": "limit",
+                                  "value": "ea"
+                                },
+                                {
+                                  "key": "page",
+                                  "value": "ea"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Internal Server Error",
+                          "code": 500,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Origin",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Methods",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Max-Age",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Headers",
+                              "value": "ea"
+                            },
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                        },
+                        {
+                          "id": "6de2345b-c617-42db-a5eb-816f231c00ec",
+                          "name": "503 response",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              },
+                              {
+                                "key": "X-Department",
+                                "value": "ea"
+                              },
+                              {
+                                "key": "Accept-Language",
+                                "value": "ea"
+                              },
+                              {
+                                "description": "(Required) ",
+                                "key": "Authorization",
+                                "value": "ea"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/permissions?limit=ea&page=ea",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "permissions"
+                              ],
+                              "query": [
+                                {
+                                  "key": "limit",
+                                  "value": "ea"
+                                },
+                                {
+                                  "key": "page",
+                                  "value": "ea"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Service Unavailable",
+                          "code": 503,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Origin",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Methods",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Max-Age",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Headers",
+                              "value": "ea"
+                            },
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                        }
+                      ]
                     }
                   ],
                   "id": "8e5903dd-ad11-4818-8806-13a3a1b7f378"
@@ -92512,7 +92774,7 @@
   ],
   "variable": [
     {
-      "id": "ef3f93bb-b95b-436f-8cd4-03e5cfc5b474",
+      "id": "8d623b54-fc0e-4b5e-ad01-ad2b6e87104a",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
