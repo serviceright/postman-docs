@@ -34174,7 +34174,7 @@
                           "name": "{permission}",
                           "item": [
                             {
-                              "name": "/system/authorization/permissions/service-names Copy",
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
                               "id": "f858dc2c-e80b-4182-90ea-193a24591b74",
                               "protocolProfileBehavior": {
                                 "disableBodyPruning": true
@@ -34188,7 +34188,7 @@
                                     "in": "header"
                                   }
                                 },
-                                "method": "GET",
+                                "method": "POST",
                                 "header": [
                                   {
                                     "key": "X-Department",
@@ -34204,12 +34204,153 @@
                                     "value": "ea"
                                   }
                                 ],
-                                "url": "{{baseUrl}}/system/authorization/permissions/service-names"
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
                               },
                               "response": []
                             },
                             {
-                              "name": "/system/authorization/permissions/service-names Copy",
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
+                              "id": "380fadde-9d43-4e84-b5b2-83eac920352d",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "auth": {
+                                  "type": "apikey",
+                                  "apikey": {
+                                    "key": "Authorization",
+                                    "value": true,
+                                    "in": "header"
+                                  }
+                                },
+                                "method": "PUT",
+                                "header": [
+                                  {
+                                    "key": "X-Department",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "key": "Accept-Language",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "description": "(Required) ",
+                                    "key": "Authorization",
+                                    "value": "ea"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": []
+                            },
+                            {
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
+                              "id": "4219fed3-2f50-4ad7-b5c2-a5d415ee8d22",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "auth": {
+                                  "type": "apikey",
+                                  "apikey": {
+                                    "key": "Authorization",
+                                    "value": true,
+                                    "in": "header"
+                                  }
+                                },
+                                "method": "PUT",
+                                "header": [
+                                  {
+                                    "key": "X-Department",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "key": "Accept-Language",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "description": "(Required) ",
+                                    "key": "Authorization",
+                                    "value": "ea"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "18c4623e-2f8c-4bff-92ab-2038c92b59a3",
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "id": "c4e1311c-9722-4e8a-be46-f92bcffe1453",
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": []
+                            },
+                            {
+                              "name": "/system/authorization/permissions/roles/{role}/{permission}",
                               "id": "a004d78b-d43a-4b66-9e8e-d664ca146a0b",
                               "protocolProfileBehavior": {
                                 "disableBodyPruning": true
@@ -34217,7 +34358,30 @@
                               "request": {
                                 "method": "OPTIONS",
                                 "header": [],
-                                "url": "{{baseUrl}}/system/authorization/permissions/service-names"
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
                               },
                               "response": [
                                 {
@@ -34226,7 +34390,30 @@
                                   "originalRequest": {
                                     "method": "OPTIONS",
                                     "header": [],
-                                    "url": "{{baseUrl}}/system/authorization/permissions/service-names"
+                                    "url": {
+                                      "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                      "host": [
+                                        "{{baseUrl}}"
+                                      ],
+                                      "path": [
+                                        "system",
+                                        "authorization",
+                                        "permissions",
+                                        "roles",
+                                        ":role",
+                                        ":permission"
+                                      ],
+                                      "variable": [
+                                        {
+                                          "key": "role",
+                                          "value": "2"
+                                        },
+                                        {
+                                          "key": "permission",
+                                          "value": "158"
+                                        }
+                                      ]
+                                    }
                                   },
                                   "status": "OK",
                                   "code": 200,
@@ -92624,7 +92811,7 @@
   ],
   "variable": [
     {
-      "id": "ec8a80a5-069c-4f13-8e8b-b9cf52fd2b14",
+      "id": "b8e1e0d6-c668-414b-a113-8cf2b95b4ec3",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
