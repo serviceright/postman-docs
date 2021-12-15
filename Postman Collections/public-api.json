@@ -34290,6 +34290,66 @@
                               "response": []
                             },
                             {
+                              "name": "/system/authorization/permissions/roles/{role}/{permission} Copy",
+                              "id": "4219fed3-2f50-4ad7-b5c2-a5d415ee8d22",
+                              "protocolProfileBehavior": {
+                                "disableBodyPruning": true
+                              },
+                              "request": {
+                                "auth": {
+                                  "type": "apikey",
+                                  "apikey": {
+                                    "key": "Authorization",
+                                    "value": true,
+                                    "in": "header"
+                                  }
+                                },
+                                "method": "PUT",
+                                "header": [
+                                  {
+                                    "key": "X-Department",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "key": "Accept-Language",
+                                    "value": "ea"
+                                  },
+                                  {
+                                    "description": "(Required) ",
+                                    "key": "Authorization",
+                                    "value": "ea"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "permissions",
+                                    "roles",
+                                    ":role",
+                                    ":permission"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "id": "18c4623e-2f8c-4bff-92ab-2038c92b59a3",
+                                      "key": "role",
+                                      "value": "ea"
+                                    },
+                                    {
+                                      "id": "c4e1311c-9722-4e8a-be46-f92bcffe1453",
+                                      "key": "permission",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "response": []
+                            },
+                            {
                               "name": "/system/authorization/permissions/roles/{role}/{permission}",
                               "id": "a004d78b-d43a-4b66-9e8e-d664ca146a0b",
                               "protocolProfileBehavior": {
@@ -34393,66 +34453,6 @@
                                   "body": "{}"
                                 }
                               ]
-                            },
-                            {
-                              "name": "/system/authorization/permissions/roles/{role}/{permission} Copy",
-                              "id": "4219fed3-2f50-4ad7-b5c2-a5d415ee8d22",
-                              "protocolProfileBehavior": {
-                                "disableBodyPruning": true
-                              },
-                              "request": {
-                                "auth": {
-                                  "type": "apikey",
-                                  "apikey": {
-                                    "key": "Authorization",
-                                    "value": true,
-                                    "in": "header"
-                                  }
-                                },
-                                "method": "PUT",
-                                "header": [
-                                  {
-                                    "key": "X-Department",
-                                    "value": "ea"
-                                  },
-                                  {
-                                    "key": "Accept-Language",
-                                    "value": "ea"
-                                  },
-                                  {
-                                    "description": "(Required) ",
-                                    "key": "Authorization",
-                                    "value": "ea"
-                                  }
-                                ],
-                                "url": {
-                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
-                                  "host": [
-                                    "{{baseUrl}}"
-                                  ],
-                                  "path": [
-                                    "system",
-                                    "authorization",
-                                    "permissions",
-                                    "roles",
-                                    ":role",
-                                    ":permission"
-                                  ],
-                                  "variable": [
-                                    {
-                                      "id": "18c4623e-2f8c-4bff-92ab-2038c92b59a3",
-                                      "key": "role",
-                                      "value": "ea"
-                                    },
-                                    {
-                                      "id": "c4e1311c-9722-4e8a-be46-f92bcffe1453",
-                                      "key": "permission",
-                                      "value": "ea"
-                                    }
-                                  ]
-                                }
-                              },
-                              "response": []
                             }
                           ],
                           "id": "143165f2-3b3d-49d9-aaef-9d97ace1e2d2"
@@ -92811,7 +92811,7 @@
   ],
   "variable": [
     {
-      "id": "cca06d8e-b419-46b2-8095-09a58c27a4bd",
+      "id": "48387fd9-7c07-4c38-8fc0-b0e6d22a53ec",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
