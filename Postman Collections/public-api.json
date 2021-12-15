@@ -34502,7 +34502,7 @@
                                   }
                                 ],
                                 "url": {
-                                  "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
+                                  "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
                                   "host": [
                                     "{{baseUrl}}"
                                   ],
@@ -34510,18 +34510,16 @@
                                     "system",
                                     "authorization",
                                     "permissions",
-                                    "roles",
-                                    ":role",
+                                    "users",
+                                    ":user",
                                     ":permission"
                                   ],
                                   "variable": [
                                     {
-                                      "id": "5f66abc9-4d0d-439d-89fc-1a891a4f8f3a",
-                                      "key": "role",
+                                      "key": "user",
                                       "value": "ea"
                                     },
                                     {
-                                      "id": "d969baeb-fb35-4a95-91e6-c1b4bde503c3",
                                       "key": "permission",
                                       "value": "ea"
                                     }
@@ -93114,7 +93112,7 @@
   ],
   "variable": [
     {
-      "id": "a2953f75-803a-41f8-bc4f-fb1989bea861",
+      "id": "49e551e4-5e48-4a9f-a45e-39922b5c2502",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
