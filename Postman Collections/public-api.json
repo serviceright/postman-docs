@@ -34369,17 +34369,6 @@
                   "id": "8e5903dd-ad11-4818-8806-13a3a1b7f378"
                 },
                 {
-                  "name": "users",
-                  "item": [
-                    {
-                      "name": "{user}",
-                      "item": [],
-                      "id": "ef001843-64a1-496b-8143-fde6b5e53184"
-                    }
-                  ],
-                  "id": "f07ea1f8-6a82-4f84-a472-f02db1aa27b8"
-                },
-                {
                   "name": "/system/authorization/permissions",
                   "id": "9c362bdc-7463-41c7-b973-88dac102bccc",
                   "request": {
@@ -35365,10 +35354,10 @@
               "name": "users",
               "item": [
                 {
-                  "name": "{permission}",
+                  "name": "permissions",
                   "item": [
                     {
-                      "name": "/system/authorization/permissions/users/{user}/{permission}",
+                      "name": "/system/authorization/users/permissions",
                       "id": "1799a6a0-61cf-4002-877a-451c17063fff",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -35398,35 +35387,12 @@
                             "value": "ea"
                           }
                         ],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "users",
-                            ":user",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "user",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/users/permissions"
                       },
                       "response": []
                     },
                     {
-                      "name": "/system/authorization/permissions/users/{user}/{permission}",
+                      "name": "/system/authorization/users/permissions",
                       "id": "96a41af6-7f18-4bb3-80e2-8a88506decd0",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -35456,35 +35422,12 @@
                             "value": "ea"
                           }
                         ],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "users",
-                            ":user",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "user",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/users/permissions"
                       },
                       "response": []
                     },
                     {
-                      "name": "/system/authorization/permissions/users/{user}/{permission}",
+                      "name": "/system/authorization/users/permissions",
                       "id": "07db18dd-d5ff-40dd-a4c3-c52bd45c915a",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -35514,35 +35457,12 @@
                             "value": "ea"
                           }
                         ],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "users",
-                            ":user",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "user",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/users/permissions"
                       },
                       "response": []
                     },
                     {
-                      "name": "/system/authorization/permissions/users/{user}/{permission}",
+                      "name": "/system/authorization/users/permissions",
                       "id": "e380d3a0-7f5a-43f8-b744-126cc0993229",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -35550,30 +35470,7 @@
                       "request": {
                         "method": "OPTIONS",
                         "header": [],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "users",
-                            ":user",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "user",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/users/permissions"
                       },
                       "response": [
                         {
@@ -35582,30 +35479,7 @@
                           "originalRequest": {
                             "method": "OPTIONS",
                             "header": [],
-                            "url": {
-                              "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
-                              "host": [
-                                "{{baseUrl}}"
-                              ],
-                              "path": [
-                                "system",
-                                "authorization",
-                                "permissions",
-                                "users",
-                                ":user",
-                                ":permission"
-                              ],
-                              "variable": [
-                                {
-                                  "key": "user",
-                                  "value": "2"
-                                },
-                                {
-                                  "key": "permission",
-                                  "value": "158"
-                                }
-                              ]
-                            }
+                            "url": "{{baseUrl}}/system/authorization/users/permissions"
                           },
                           "status": "OK",
                           "code": 200,
@@ -93018,7 +92892,7 @@
   ],
   "variable": [
     {
-      "id": "eee8860d-8db2-4293-b5bd-743108204a3f",
+      "id": "aa0bad2a-0263-4af1-84e8-1e99f85dba3d",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
