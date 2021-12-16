@@ -35646,6 +35646,11 @@
                 }
               ],
               "id": "5cf24ba9-0300-4511-813c-8beec4dfaa90"
+            },
+            {
+              "name": "New Folder",
+              "item": [],
+              "id": "bc9ca9e2-31cd-4503-8f40-09aea20182ee"
             }
           ],
           "id": "663f8ed9-3430-4702-b779-7ceeba8d9b24"
@@ -93013,7 +93018,7 @@
   ],
   "variable": [
     {
-      "id": "0b7453c8-2425-4691-8302-6605a7d89c27",
+      "id": "de428a17-9379-421d-9522-1be08362477c",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
