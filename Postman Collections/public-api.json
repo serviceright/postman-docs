@@ -34369,17 +34369,6 @@
                   "id": "8e5903dd-ad11-4818-8806-13a3a1b7f378"
                 },
                 {
-                  "name": "users",
-                  "item": [
-                    {
-                      "name": "{user}",
-                      "item": [],
-                      "id": "ef001843-64a1-496b-8143-fde6b5e53184"
-                    }
-                  ],
-                  "id": "f07ea1f8-6a82-4f84-a472-f02db1aa27b8"
-                },
-                {
                   "name": "/system/authorization/permissions",
                   "id": "9c362bdc-7463-41c7-b973-88dac102bccc",
                   "request": {
@@ -93018,7 +93007,7 @@
   ],
   "variable": [
     {
-      "id": "c7ab0aa7-da91-4061-bfef-800ea064a790",
+      "id": "b71c3ee5-745e-4e64-aa65-8ec234fda562",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
