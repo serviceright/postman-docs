@@ -28853,7 +28853,7 @@
                                 "method": "OPTIONS",
                                 "header": [],
                                 "url": {
-                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/permissions",
                                   "host": [
                                     "{{baseUrl}}"
                                   ],
@@ -28862,7 +28862,7 @@
                                     "authorization",
                                     "roles",
                                     ":role",
-                                    "users"
+                                    "permissions"
                                   ],
                                   "variable": [
                                     {
@@ -28943,7 +28943,7 @@
                               }
                             ],
                             "url": {
-                              "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role/permissions",
                               "host": [
                                 "{{baseUrl}}"
                               ],
@@ -28952,11 +28952,10 @@
                                 "authorization",
                                 "roles",
                                 ":role",
-                                "users"
+                                "permissions"
                               ],
                               "variable": [
                                 {
-                                  "id": "aded3294-9646-462e-b050-f1b1689e58c4",
                                   "key": "role",
                                   "value": "ea"
                                 }
@@ -93265,7 +93264,7 @@
   ],
   "variable": [
     {
-      "id": "8cfc02bd-df70-482e-b6fc-bffb957d1473",
+      "id": "9b603bb3-bc68-4907-b179-82e91a5a7d5c",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
