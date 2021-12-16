@@ -30608,6 +30608,15 @@
                             "value": "ea"
                           }
                         ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n    \"role_id\": 2,\n    \"permission_id\": 158,\n    \"forbidden\": true\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
                         "url": "{{baseUrl}}/system/authorization/roles/permissions"
                       },
                       "response": []
@@ -93018,7 +93027,7 @@
   ],
   "variable": [
     {
-      "id": "e9c1bc3f-9ff5-4d01-b98e-3bfc8a5a07fe",
+      "id": "707dd5c8-5c4d-4406-864a-e1c2fe0752ab",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
