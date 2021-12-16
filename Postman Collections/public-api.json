@@ -30426,7 +30426,7 @@
                       ]
                     },
                     {
-                      "name": "/system/authorization/roles/:role Copy",
+                      "name": "/system/authorization/roles/:role",
                       "id": "4134a085-4463-41d9-b477-24e41e0bac3e",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -30440,7 +30440,7 @@
                             "in": "header"
                           }
                         },
-                        "method": "DELETE",
+                        "method": "PATCH",
                         "header": [
                           {
                             "key": "X-Department",
@@ -30456,6 +30456,15 @@
                             "value": "ea"
                           }
                         ],
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n    \"description\": \"\",\n    \"level\": \"\"\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
+                            }
+                          }
+                        },
                         "url": {
                           "raw": "{{baseUrl}}/system/authorization/roles/:role",
                           "host": [
@@ -93778,7 +93787,7 @@
   ],
   "variable": [
     {
-      "id": "2c8fa950-26df-469b-8716-d387d04a75d5",
+      "id": "13cd5659-9fb4-4364-8486-db907db068e0",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
