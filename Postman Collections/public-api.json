@@ -30426,94 +30426,6 @@
                       ]
                     },
                     {
-                      "name": "/system/authorization/roles/:role",
-                      "id": "65c81d56-87e3-4820-b909-da1486c35660",
-                      "request": {
-                        "method": "OPTIONS",
-                        "header": [],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/roles/:role",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "roles",
-                            ":role"
-                          ],
-                          "variable": [
-                            {
-                              "key": "role"
-                            }
-                          ]
-                        }
-                      },
-                      "response": [
-                        {
-                          "id": "3f265606-38a1-4b25-b464-59617686492e",
-                          "name": "200 response",
-                          "originalRequest": {
-                            "method": "OPTIONS",
-                            "header": [],
-                            "url": {
-                              "raw": "{{baseUrl}}/system/authorization/roles/:role",
-                              "host": [
-                                "{{baseUrl}}"
-                              ],
-                              "path": [
-                                "system",
-                                "authorization",
-                                "roles",
-                                ":role"
-                              ],
-                              "variable": [
-                                {
-                                  "key": "role"
-                                }
-                              ]
-                            }
-                          },
-                          "status": "OK",
-                          "code": 200,
-                          "_postman_previewlanguage": "json",
-                          "header": [
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Origin",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Methods",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Max-Age",
-                              "value": "ea"
-                            },
-                            {
-                              "disabled": false,
-                              "description": "",
-                              "key": "Access-Control-Allow-Headers",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "Content-Type",
-                              "value": "application/json"
-                            }
-                          ],
-                          "cookie": [],
-                          "responseTime": null,
-                          "body": "{}"
-                        }
-                      ]
-                    },
-                    {
                       "name": "/system/authorization/roles/:role Copy",
                       "id": "4134a085-4463-41d9-b477-24e41e0bac3e",
                       "protocolProfileBehavior": {
@@ -31396,6 +31308,94 @@
                           "cookie": [],
                           "responseTime": null,
                           "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "/system/authorization/roles/:role",
+                      "id": "65c81d56-87e3-4820-b909-da1486c35660",
+                      "request": {
+                        "method": "OPTIONS",
+                        "header": [],
+                        "url": {
+                          "raw": "{{baseUrl}}/system/authorization/roles/:role",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "system",
+                            "authorization",
+                            "roles",
+                            ":role"
+                          ],
+                          "variable": [
+                            {
+                              "key": "role"
+                            }
+                          ]
+                        }
+                      },
+                      "response": [
+                        {
+                          "id": "3f265606-38a1-4b25-b464-59617686492e",
+                          "name": "200 response",
+                          "originalRequest": {
+                            "method": "OPTIONS",
+                            "header": [],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "roles",
+                                ":role"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "role"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Origin",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Methods",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Max-Age",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Headers",
+                              "value": "ea"
+                            },
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{}"
                         }
                       ]
                     }
@@ -93778,7 +93778,7 @@
   ],
   "variable": [
     {
-      "id": "750722eb-1b7b-40b7-b701-cddc6d37df34",
+      "id": "2c8fa950-26df-469b-8716-d387d04a75d5",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
