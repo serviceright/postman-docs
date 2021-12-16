@@ -28660,11 +28660,6 @@
                   "name": "{role}",
                   "item": [
                     {
-                      "name": "permissions",
-                      "item": [],
-                      "id": "2f63ff5f-de5c-4369-9896-16b36f295b19"
-                    },
-                    {
                       "name": "users",
                       "item": [
                         {
@@ -93115,7 +93110,7 @@
   ],
   "variable": [
     {
-      "id": "bae6e61b-4f6a-4fc6-9624-4e7db24f390e",
+      "id": "badadda5-9f99-4963-a820-7fa22aab73f2",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
