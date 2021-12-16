@@ -30523,7 +30523,7 @@
                       "name": "{role}",
                       "item": [
                         {
-                          "name": "{permission}",
+                          "name": "permissions",
                           "item": [
                             {
                               "name": "/system/authorization/permissions/roles/{role}/{permission}",
@@ -93106,7 +93106,7 @@
   ],
   "variable": [
     {
-      "id": "83a4a3c8-ca17-42d6-80cd-b686bf64f688",
+      "id": "64577fb5-c2a1-4904-a556-7bc0dfee490e",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
