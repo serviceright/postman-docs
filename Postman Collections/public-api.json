@@ -35354,7 +35354,7 @@
               "name": "users",
               "item": [
                 {
-                  "name": "{permission}",
+                  "name": "permissions",
                   "item": [
                     {
                       "name": "/system/authorization/permissions/users/{user}/{permission}",
@@ -93007,7 +93007,7 @@
   ],
   "variable": [
     {
-      "id": "c81136c7-5da5-4844-adcb-d02bbc269a7f",
+      "id": "3e453f5a-1e2e-4151-8b88-04ed2d4d94cd",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
