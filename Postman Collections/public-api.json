@@ -35503,30 +35503,7 @@
                             "value": "ea"
                           }
                         ],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "users",
-                            ":user",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "user",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/users/permissions"
                       },
                       "response": []
                     },
@@ -35548,30 +35525,7 @@
                           "originalRequest": {
                             "method": "OPTIONS",
                             "header": [],
-                            "url": {
-                              "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
-                              "host": [
-                                "{{baseUrl}}"
-                              ],
-                              "path": [
-                                "system",
-                                "authorization",
-                                "permissions",
-                                "users",
-                                ":user",
-                                ":permission"
-                              ],
-                              "variable": [
-                                {
-                                  "key": "user",
-                                  "value": "2"
-                                },
-                                {
-                                  "key": "permission",
-                                  "value": "158"
-                                }
-                              ]
-                            }
+                            "url": "{{baseUrl}}/system/authorization/users/permissions"
                           },
                           "status": "OK",
                           "code": 200,
@@ -92984,7 +92938,7 @@
   ],
   "variable": [
     {
-      "id": "a5aff609-c91f-45b0-b0d0-4ef5b06404eb",
+      "id": "d908fa65-a5c1-40de-86d5-790a5e764585",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
