@@ -30608,30 +30608,7 @@
                             "value": "ea"
                           }
                         ],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "roles",
-                            ":role",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "role",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/roles/permissions"
                       },
                       "response": []
                     },
@@ -30666,35 +30643,21 @@
                             "value": "ea"
                           }
                         ],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "roles",
-                            ":role",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "role",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
+                        "body": {
+                          "mode": "raw",
+                          "raw": "{\n    \"role_id\": 2,\n    \"permission_id\": 158\n}",
+                          "options": {
+                            "raw": {
+                              "language": "json"
                             }
-                          ]
-                        }
+                          }
+                        },
+                        "url": "{{baseUrl}}/system/authorization/roles/permissions"
                       },
                       "response": []
                     },
                     {
-                      "name": "/system/authorization/permissions/roles/{role}/{permission}",
+                      "name": "/system/authorization/roles/permissions",
                       "id": "a004d78b-d43a-4b66-9e8e-d664ca146a0b",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -30702,30 +30665,7 @@
                       "request": {
                         "method": "OPTIONS",
                         "header": [],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "roles",
-                            ":role",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "role",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/roles/permissions"
                       },
                       "response": [
                         {
@@ -30733,31 +30673,15 @@
                           "name": "200 response",
                           "originalRequest": {
                             "method": "OPTIONS",
-                            "header": [],
-                            "url": {
-                              "raw": "{{baseUrl}}/system/authorization/permissions/roles/:role/:permission",
-                              "host": [
-                                "{{baseUrl}}"
-                              ],
-                              "path": [
-                                "system",
-                                "authorization",
-                                "permissions",
-                                "roles",
-                                ":role",
-                                ":permission"
-                              ],
-                              "variable": [
-                                {
-                                  "key": "role",
-                                  "value": "2"
-                                },
-                                {
-                                  "key": "permission",
-                                  "value": "158"
-                                }
-                              ]
-                            }
+                            "header": [
+                              {
+                                "key": "Content-Type",
+                                "name": "Content-Type",
+                                "value": "application/json",
+                                "type": "text"
+                              }
+                            ],
+                            "url": "{{baseUrl}}/system/authorization/roles/permissions"
                           },
                           "status": "OK",
                           "code": 200,
@@ -93094,7 +93018,7 @@
   ],
   "variable": [
     {
-      "id": "dc76584e-045f-49d2-8e17-468f98c10cf1",
+      "id": "e9c1bc3f-9ff5-4d01-b98e-3bfc8a5a07fe",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
