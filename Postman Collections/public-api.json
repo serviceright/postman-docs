@@ -30655,6 +30655,255 @@
                           "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
                         },
                         {
+                          "id": "958ccb44-d2c6-4225-900c-2baf933af74e",
+                          "name": "405 response",
+                          "originalRequest": {
+                            "method": "DELETE",
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              },
+                              {
+                                "key": "X-Department",
+                                "value": "ea"
+                              },
+                              {
+                                "key": "Accept-Language",
+                                "value": "ea"
+                              },
+                              {
+                                "description": "(Required) ",
+                                "key": "Authorization",
+                                "value": "ea"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "roles",
+                                ":role"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "role"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Method Not Allowed",
+                          "code": 405,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Origin",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Methods",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Max-Age",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Headers",
+                              "value": "ea"
+                            },
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                        },
+                        {
+                          "id": "524176dc-6109-48ee-b8fc-7689be581cc9",
+                          "name": "422 response",
+                          "originalRequest": {
+                            "method": "DELETE",
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              },
+                              {
+                                "key": "X-Department",
+                                "value": "ea"
+                              },
+                              {
+                                "key": "Accept-Language",
+                                "value": "ea"
+                              },
+                              {
+                                "description": "(Required) ",
+                                "key": "Authorization",
+                                "value": "ea"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "roles",
+                                ":role"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "role"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+                          "code": 422,
+                          "_postman_previewlanguage": "text",
+                          "header": [
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Origin",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Methods",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Max-Age",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Headers",
+                              "value": "ea"
+                            },
+                            {
+                              "key": "Content-Type",
+                              "value": "text/plain"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": ""
+                        },
+                        {
+                          "id": "b48b8d3d-ae1f-4c05-aa0c-41e66bbe3516",
+                          "name": "429 response",
+                          "originalRequest": {
+                            "method": "DELETE",
+                            "header": [
+                              {
+                                "description": {
+                                  "content": "Added as a part of security scheme: apikey",
+                                  "type": "text/plain"
+                                },
+                                "key": "Authorization",
+                                "value": "<API Key>"
+                              },
+                              {
+                                "key": "X-Department",
+                                "value": "ea"
+                              },
+                              {
+                                "key": "Accept-Language",
+                                "value": "ea"
+                              },
+                              {
+                                "description": "(Required) ",
+                                "key": "Authorization",
+                                "value": "ea"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "roles",
+                                ":role"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "role"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "Too Many Requests",
+                          "code": 429,
+                          "_postman_previewlanguage": "text",
+                          "header": [
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Origin",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Methods",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Max-Age",
+                              "value": "ea"
+                            },
+                            {
+                              "disabled": false,
+                              "description": "",
+                              "key": "Access-Control-Allow-Headers",
+                              "value": "ea"
+                            },
+                            {
+                              "key": "Content-Type",
+                              "value": "text/plain"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": ""
+                        },
+                        {
                           "id": "e1765307-c066-4f1b-9696-8da8638a84cd",
                           "name": "500 response",
                           "originalRequest": {
@@ -93289,7 +93538,7 @@
   ],
   "variable": [
     {
-      "id": "89ad0255-9531-48cc-90a5-641e4bf94109",
+      "id": "4e10f014-fbfb-43c9-bece-c30a32600939",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
