@@ -28814,6 +28814,162 @@
                       "id": "628dea74-4d44-4cf4-b801-d971d3906bb2"
                     },
                     {
+                      "name": "users Copy",
+                      "item": [
+                        {
+                          "name": "/system/authorization/roles/{role}/users",
+                          "id": "558db522-514b-4a3a-b097-b97a4e0ae9f5",
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          },
+                          "request": {
+                            "method": "OPTIONS",
+                            "header": [],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "roles",
+                                ":role",
+                                "users"
+                              ],
+                              "variable": [
+                                {
+                                  "id": "c6e2c5c3-049d-4232-bd50-54f7cab3b641",
+                                  "key": "role",
+                                  "value": "ea"
+                                }
+                              ]
+                            }
+                          },
+                          "response": [
+                            {
+                              "id": "a8e37647-07f8-4e87-9049-57c4e3bf1354",
+                              "name": "200 response",
+                              "originalRequest": {
+                                "method": "OPTIONS",
+                                "header": [],
+                                "url": {
+                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "system",
+                                    "authorization",
+                                    "roles",
+                                    ":role",
+                                    "users"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "role",
+                                      "value": "ea"
+                                    }
+                                  ]
+                                }
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "_postman_previewlanguage": "json",
+                              "header": [
+                                {
+                                  "disabled": false,
+                                  "description": "",
+                                  "key": "Access-Control-Allow-Origin",
+                                  "value": "ea"
+                                },
+                                {
+                                  "disabled": false,
+                                  "description": "",
+                                  "key": "Access-Control-Allow-Methods",
+                                  "value": "ea"
+                                },
+                                {
+                                  "disabled": false,
+                                  "description": "",
+                                  "key": "Access-Control-Max-Age",
+                                  "value": "ea"
+                                },
+                                {
+                                  "disabled": false,
+                                  "description": "",
+                                  "key": "Access-Control-Allow-Headers",
+                                  "value": "ea"
+                                },
+                                {
+                                  "key": "Content-Type",
+                                  "value": "application/json"
+                                }
+                              ],
+                              "cookie": [],
+                              "responseTime": null,
+                              "body": "{}"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "/system/authorization/roles/{role}/users",
+                          "id": "6a6b835f-7d05-41f9-b205-d26e6d40c8e2",
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          },
+                          "request": {
+                            "auth": {
+                              "type": "apikey",
+                              "apikey": {
+                                "key": "Authorization",
+                                "value": true,
+                                "in": "header"
+                              }
+                            },
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "X-Department",
+                                "value": "ea"
+                              },
+                              {
+                                "key": "Accept-Language",
+                                "value": "ea"
+                              },
+                              {
+                                "description": "(Required) ",
+                                "key": "Authorization",
+                                "value": "ea"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "system",
+                                "authorization",
+                                "roles",
+                                ":role",
+                                "users"
+                              ],
+                              "variable": [
+                                {
+                                  "id": "aded3294-9646-462e-b050-f1b1689e58c4",
+                                  "key": "role",
+                                  "value": "ea"
+                                }
+                              ]
+                            }
+                          },
+                          "response": []
+                        }
+                      ],
+                      "id": "ec35d356-69a8-4946-80d2-2e9e5abf171b"
+                    },
+                    {
                       "name": "/system/authorization/roles/:role",
                       "id": "18441251-133a-4399-8410-026326b8d867",
                       "request": {
@@ -93110,7 +93266,7 @@
   ],
   "variable": [
     {
-      "id": "badadda5-9f99-4963-a820-7fa22aab73f2",
+      "id": "e8de9518-e64c-4de1-96b5-cea5fc1122be",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
