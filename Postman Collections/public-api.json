@@ -35473,7 +35473,7 @@
                       "response": []
                     },
                     {
-                      "name": "/system/authorization/permissions/users/{user}/{permission}",
+                      "name": "/system/authorization/users/permissions",
                       "id": "07db18dd-d5ff-40dd-a4c3-c52bd45c915a",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -35531,7 +35531,7 @@
                       "response": []
                     },
                     {
-                      "name": "/system/authorization/permissions/users/{user}/{permission}",
+                      "name": "/system/authorization/users/permissions",
                       "id": "e380d3a0-7f5a-43f8-b744-126cc0993229",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -35539,30 +35539,7 @@
                       "request": {
                         "method": "OPTIONS",
                         "header": [],
-                        "url": {
-                          "raw": "{{baseUrl}}/system/authorization/permissions/users/:user/:permission",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "system",
-                            "authorization",
-                            "permissions",
-                            "users",
-                            ":user",
-                            ":permission"
-                          ],
-                          "variable": [
-                            {
-                              "key": "user",
-                              "value": "ea"
-                            },
-                            {
-                              "key": "permission",
-                              "value": "ea"
-                            }
-                          ]
-                        }
+                        "url": "{{baseUrl}}/system/authorization/users/permissions"
                       },
                       "response": [
                         {
@@ -93007,7 +92984,7 @@
   ],
   "variable": [
     {
-      "id": "2cc56140-8c53-4843-90ff-c2ea6b7ec871",
+      "id": "a5aff609-c91f-45b0-b0d0-4ef5b06404eb",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
