@@ -28660,7 +28660,7 @@
                   "name": "{role}",
                   "item": [
                     {
-                      "name": "users",
+                      "name": "employees",
                       "item": [
                         {
                           "name": "/system/authorization/roles/{role}/users",
@@ -35851,7 +35851,7 @@
                           "originalRequest": {
                             "method": "OPTIONS",
                             "header": [],
-                            "url": "{{baseUrl}}/system/authorization/users/permissions"
+                            "url": "{{baseUrl}}/system/authorization/employees/permissions"
                           },
                           "status": "OK",
                           "code": 200,
@@ -93264,7 +93264,7 @@
   ],
   "variable": [
     {
-      "id": "846710e5-8ac0-49d1-809c-796d224ff623",
+      "id": "5c32adb1-0e29-4921-9e25-4df685055ce1",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
