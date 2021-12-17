@@ -35834,7 +35834,7 @@
                       "response": []
                     },
                     {
-                      "name": "/system/authorization/users/permissions",
+                      "name": "/system/authorization/employees/permissions",
                       "id": "e380d3a0-7f5a-43f8-b744-126cc0993229",
                       "protocolProfileBehavior": {
                         "disableBodyPruning": true
@@ -35842,7 +35842,7 @@
                       "request": {
                         "method": "OPTIONS",
                         "header": [],
-                        "url": "{{baseUrl}}/system/authorization/users/permissions"
+                        "url": "{{baseUrl}}/system/authorization/employees/permissions"
                       },
                       "response": [
                         {
@@ -93264,7 +93264,7 @@
   ],
   "variable": [
     {
-      "id": "a81bca76-38f0-4779-ada2-aad4db43a932",
+      "id": "d78794fe-f774-45fe-803f-294f10e3b94f",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
