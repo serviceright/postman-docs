@@ -28699,7 +28699,7 @@
                                 "method": "OPTIONS",
                                 "header": [],
                                 "url": {
-                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/employees",
                                   "host": [
                                     "{{baseUrl}}"
                                   ],
@@ -28708,7 +28708,7 @@
                                     "authorization",
                                     "roles",
                                     ":role",
-                                    "users"
+                                    "employees"
                                   ],
                                   "variable": [
                                     {
@@ -28789,7 +28789,7 @@
                               }
                             ],
                             "url": {
-                              "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role/employees",
                               "host": [
                                 "{{baseUrl}}"
                               ],
@@ -28798,7 +28798,7 @@
                                 "authorization",
                                 "roles",
                                 ":role",
-                                "users"
+                                "employees"
                               ],
                               "variable": [
                                 {
@@ -93264,7 +93264,7 @@
   ],
   "variable": [
     {
-      "id": "08c8977a-eb29-4a19-982d-b7636e629bdf",
+      "id": "b2ce1ccd-6db5-4d17-823f-cf08718fd19a",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
