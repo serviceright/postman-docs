@@ -28663,7 +28663,7 @@
                       "name": "employees",
                       "item": [
                         {
-                          "name": "/system/authorization/roles/{role}/employees",
+                          "name": "/system/authorization/roles/{role}/users",
                           "id": "0d483a9f-28ed-45c7-8015-a91ee8084d16",
                           "protocolProfileBehavior": {
                             "disableBodyPruning": true
@@ -28699,7 +28699,7 @@
                                 "method": "OPTIONS",
                                 "header": [],
                                 "url": {
-                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/employees",
+                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
                                   "host": [
                                     "{{baseUrl}}"
                                   ],
@@ -28708,7 +28708,7 @@
                                     "authorization",
                                     "roles",
                                     ":role",
-                                    "employees"
+                                    "users"
                                   ],
                                   "variable": [
                                     {
@@ -28789,7 +28789,7 @@
                               }
                             ],
                             "url": {
-                              "raw": "{{baseUrl}}/system/authorization/roles/:role/employees",
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
                               "host": [
                                 "{{baseUrl}}"
                               ],
@@ -28798,7 +28798,7 @@
                                 "authorization",
                                 "roles",
                                 ":role",
-                                "employees"
+                                "users"
                               ],
                               "variable": [
                                 {
@@ -93264,7 +93264,7 @@
   ],
   "variable": [
     {
-      "id": "b2ce1ccd-6db5-4d17-823f-cf08718fd19a",
+      "id": "a86c1d2c-fc13-4a90-96cb-6a40873db936",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
