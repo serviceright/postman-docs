@@ -28663,7 +28663,7 @@
                       "name": "employees",
                       "item": [
                         {
-                          "name": "/system/authorization/roles/{role}/users",
+                          "name": "/system/authorization/roles/{role}/employees",
                           "id": "0d483a9f-28ed-45c7-8015-a91ee8084d16",
                           "protocolProfileBehavior": {
                             "disableBodyPruning": true
@@ -28699,7 +28699,7 @@
                                 "method": "OPTIONS",
                                 "header": [],
                                 "url": {
-                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                                  "raw": "{{baseUrl}}/system/authorization/roles/:role/employees",
                                   "host": [
                                     "{{baseUrl}}"
                                   ],
@@ -28708,7 +28708,7 @@
                                     "authorization",
                                     "roles",
                                     ":role",
-                                    "users"
+                                    "employees"
                                   ],
                                   "variable": [
                                     {
@@ -28758,7 +28758,7 @@
                           ]
                         },
                         {
-                          "name": "/system/authorization/roles/{role}/users",
+                          "name": "/system/authorization/roles/{role}/employees",
                           "id": "7a3c6ed4-0afb-465d-8df8-2743ac4bb627",
                           "protocolProfileBehavior": {
                             "disableBodyPruning": true
@@ -28789,7 +28789,7 @@
                               }
                             ],
                             "url": {
-                              "raw": "{{baseUrl}}/system/authorization/roles/:role/users",
+                              "raw": "{{baseUrl}}/system/authorization/roles/:role/employees",
                               "host": [
                                 "{{baseUrl}}"
                               ],
@@ -28798,7 +28798,7 @@
                                 "authorization",
                                 "roles",
                                 ":role",
-                                "users"
+                                "employees"
                               ],
                               "variable": [
                                 {
@@ -93264,7 +93264,7 @@
   ],
   "variable": [
     {
-      "id": "a86c1d2c-fc13-4a90-96cb-6a40873db936",
+      "id": "2feb050c-8f26-4d34-af30-5e0fa1a27c06",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
