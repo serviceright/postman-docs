@@ -35759,7 +35759,7 @@
                             "value": "ea"
                           }
                         ],
-                        "url": "{{baseUrl}}/system/authorization/users/permissions"
+                        "url": "{{baseUrl}}/system/authorization/employees/permissions"
                       },
                       "response": []
                     },
@@ -93264,7 +93264,7 @@
   ],
   "variable": [
     {
-      "id": "1af1655f-448c-4733-a084-9d83e99996af",
+      "id": "714a9889-6b71-44b2-8df9-86e4c11ab377",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
