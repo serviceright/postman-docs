@@ -63111,13 +63111,16 @@
             {
               "name": "/services/categories",
               "id": "30d65383-a88c-46e6-975e-40c8b7835397",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
               "request": {
                 "method": "GET",
                 "header": [
                   {
                     "description": "(Required) ",
                     "key": "X-Department",
-                    "value": "ea"
+                    "value": "{{department}}"
                   },
                   {
                     "key": "Accept-Language",
@@ -91660,7 +91663,7 @@
   ],
   "variable": [
     {
-      "id": "b8ae4949-5982-4f1b-9ffc-fc33f85c4b4e",
+      "id": "2613835c-9cb9-43a3-a5d9-72c0abb0000f",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
