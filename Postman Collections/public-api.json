@@ -58162,6 +58162,831 @@
           "id": "fd7ce063-383f-46c7-9f17-a9d1a06ac86b"
         },
         {
+          "name": "{service} Copy",
+          "item": [
+            {
+              "name": "/services/:service",
+              "id": "8e099c91-6ef6-43da-98fc-68b577c773e2",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services/:service",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services",
+                    ":service"
+                  ],
+                  "variable": [
+                    {
+                      "id": "d8576b82-1b97-4ede-af60-f0b6b6ccf367",
+                      "key": "service",
+                      "value": "ea",
+                      "type": "string",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "eb8160aa-458a-4b9d-8310-90dcf6e8f7c2",
+                  "name": "200 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": ""
+                },
+                {
+                  "id": "5d4743c1-8860-42e4-8ca0-2ba4bf1f8057",
+                  "name": "400 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": ""
+                },
+                {
+                  "id": "9b8e0368-40a6-4419-9040-87d8a42637ce",
+                  "name": "401 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Unauthorized",
+                  "code": 401,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                },
+                {
+                  "id": "218a5d43-ee91-44ef-b570-6187ba349047",
+                  "name": "403 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                },
+                {
+                  "id": "38d4b98f-0320-4f06-84cb-2ca37bc09563",
+                  "name": "404 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                },
+                {
+                  "id": "3b07dbdb-5bf8-4ca9-a183-1cae2e700b6e",
+                  "name": "405 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Method Not Allowed",
+                  "code": 405,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                },
+                {
+                  "id": "a8c458a6-7cee-42af-8324-0a24b4890398",
+                  "name": "422 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+                  "code": 422,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": ""
+                },
+                {
+                  "id": "95677758-cd31-4a6e-b6b6-58960e0345c2",
+                  "name": "429 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Too Many Requests",
+                  "code": 429,
+                  "_postman_previewlanguage": "text",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "text/plain"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": ""
+                },
+                {
+                  "id": "86a243f6-db95-48c4-b0a0-86b4510cbe31",
+                  "name": "500 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                },
+                {
+                  "id": "90e15fce-6eef-4362-866c-ca0273840a4c",
+                  "name": "503 response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "description": "(Required) ",
+                        "key": "X-Department",
+                        "value": "ea"
+                      },
+                      {
+                        "key": "Accept-Language",
+                        "value": "ea"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "Service Unavailable",
+                  "code": 503,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "/services/:service",
+              "id": "77b7b75e-977d-498f-8880-d5201bc222df",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "OPTIONS",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/services/:service",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services",
+                    ":service"
+                  ],
+                  "variable": [
+                    {
+                      "key": "service"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "e6ff4949-02f9-415d-bb7e-0ebfe60e346a",
+                  "name": "200 response",
+                  "originalRequest": {
+                    "method": "OPTIONS",
+                    "header": [],
+                    "url": {
+                      "raw": "{{baseUrl}}/services/:service",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "services",
+                        ":service"
+                      ],
+                      "variable": [
+                        {
+                          "key": "service"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Methods",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Max-Age",
+                      "value": "ea"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "",
+                      "key": "Access-Control-Allow-Headers",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{}"
+                }
+              ]
+            }
+          ],
+          "id": "3da79c72-5ea2-47de-b443-e82e3fe3c9a0"
+        },
+        {
           "name": "transportation-vehicles",
           "item": [
             {
@@ -90283,7 +91108,7 @@
   ],
   "variable": [
     {
-      "id": "41dd945f-9425-46d6-b781-139c5d0459e1",
+      "id": "68c1acd0-8db5-4d7e-8f73-a5f121791cd3",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
