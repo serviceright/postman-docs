@@ -59882,6 +59882,9 @@
             {
               "name": "/services/configuration/price-drivers",
               "id": "034932ca-7a4d-4b1d-8945-a8a6363f41b0",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
               "request": {
                 "auth": {
                   "type": "apikey",
@@ -59903,7 +59906,7 @@
                     "value": "ea"
                   }
                 ],
-                "url": "{{baseUrl}}/services/configuration/price-drivers"
+                "url": "{{baseUrl}}/admin/services/price-drivers"
               },
               "response": [
                 {
@@ -91663,7 +91666,7 @@
   ],
   "variable": [
     {
-      "id": "2613835c-9cb9-43a3-a5d9-72c0abb0000f",
+      "id": "86170a76-8bf3-4beb-b6f7-d93b1ea63d02",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
