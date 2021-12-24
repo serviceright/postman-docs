@@ -63932,65 +63932,6 @@
               "body": "{}"
             }
           ]
-        },
-        {
-          "name": "/services Copy",
-          "id": "106e4fe7-3a69-4f4a-8baf-2a69cb37adcb",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "OPTIONS",
-            "header": [],
-            "url": "{{baseUrl}}/services"
-          },
-          "response": [
-            {
-              "id": "380e0d52-8e0f-4cc7-8147-155c640cc26f",
-              "name": "200 response",
-              "originalRequest": {
-                "method": "OPTIONS",
-                "header": [],
-                "url": "{{baseUrl}}/services"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "disabled": false,
-                  "description": "",
-                  "key": "Access-Control-Allow-Origin",
-                  "value": "ea"
-                },
-                {
-                  "disabled": false,
-                  "description": "",
-                  "key": "Access-Control-Allow-Methods",
-                  "value": "ea"
-                },
-                {
-                  "disabled": false,
-                  "description": "",
-                  "key": "Access-Control-Max-Age",
-                  "value": "ea"
-                },
-                {
-                  "disabled": false,
-                  "description": "",
-                  "key": "Access-Control-Allow-Headers",
-                  "value": "ea"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{}"
-            }
-          ]
         }
       ],
       "id": "77b195f7-1baf-4128-b3e9-4b10715fb1fa"
@@ -90342,7 +90283,7 @@
   ],
   "variable": [
     {
-      "id": "ffb98083-1424-44e9-8211-ac603babd126",
+      "id": "00c2532a-eccc-43a7-9339-5c10967cd820",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
