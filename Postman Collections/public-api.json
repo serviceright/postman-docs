@@ -88992,122 +88992,7 @@
                       ]
                     }
                   },
-                  "response": [
-                    {
-                      "id": "582b7669-3011-4926-9356-af166198c3a7",
-                      "name": "400 response",
-                      "originalRequest": {
-                        "method": "PUT",
-                        "header": [
-                          {
-                            "key": "X-Department",
-                            "value": "{{department}}",
-                            "type": "text"
-                          },
-                          {
-                            "key": "X-Idempotency",
-                            "value": "{{idempotency}}",
-                            "type": "text"
-                          }
-                        ],
-                        "url": {
-                          "raw": "{{baseUrl}}/orders/:id/extend?hash=bdIX66diWRNGDM9KsGAPOrQcdS7YejkWWv1IFKpAhhkJZxv6oNHIdGM7OTZpsKsEzZpnORlmdCgkjQsmNfiqaEFqcPhLpvZDqbNhrfw5kzKBZQgkAcm05VCu",
-                          "host": [
-                            "{{baseUrl}}"
-                          ],
-                          "path": [
-                            "orders",
-                            ":id",
-                            "extend"
-                          ],
-                          "query": [
-                            {
-                              "key": "hash",
-                              "value": "bdIX66diWRNGDM9KsGAPOrQcdS7YejkWWv1IFKpAhhkJZxv6oNHIdGM7OTZpsKsEzZpnORlmdCgkjQsmNfiqaEFqcPhLpvZDqbNhrfw5kzKBZQgkAcm05VCu"
-                            }
-                          ],
-                          "variable": [
-                            {
-                              "key": "id",
-                              "value": "63440"
-                            }
-                          ]
-                        }
-                      },
-                      "status": "Bad Request",
-                      "code": 400,
-                      "_postman_previewlanguage": "json",
-                      "header": [
-                        {
-                          "key": "Content-Type",
-                          "value": "application/json"
-                        },
-                        {
-                          "key": "Content-Length",
-                          "value": "56"
-                        },
-                        {
-                          "key": "Connection",
-                          "value": "keep-alive"
-                        },
-                        {
-                          "key": "Date",
-                          "value": "Wed, 02 Feb 2022 08:34:19 GMT"
-                        },
-                        {
-                          "key": "x-amzn-RequestId",
-                          "value": "06415356-e795-4805-852b-6f3dbd8d7470"
-                        },
-                        {
-                          "key": "Access-Control-Allow-Origin",
-                          "value": "*"
-                        },
-                        {
-                          "key": "Content-Encoding",
-                          "value": "gzip"
-                        },
-                        {
-                          "key": "Access-Control-Allow-Headers",
-                          "value": "Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Department,X-Country,X-Captcha,X-Socket-Id,x-dynatrace,x-dynatrace-application,x-dynatrace-origin-url,x-dtHealthCheck,X-dynaTrace-RequestState,x-dtpc,x-dtreferer,x-dtc,Cookie,X-Ruxit-Forwarded-For,referer,X-Idempotency"
-                        },
-                        {
-                          "key": "x-amz-apigw-id",
-                          "value": "M59BzHuQliAFnCQ="
-                        },
-                        {
-                          "key": "Access-Control-Allow-Methods",
-                          "value": "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
-                        },
-                        {
-                          "key": "X-Amzn-Trace-Id",
-                          "value": "Root=1-61fa420b-130535fe4ad9d6346f003e59"
-                        },
-                        {
-                          "key": "Access-Control-Max-Age",
-                          "value": "7200"
-                        },
-                        {
-                          "key": "X-Cache",
-                          "value": "Error from cloudfront"
-                        },
-                        {
-                          "key": "Via",
-                          "value": "1.1 c974a69619205281e0e6b8e73f95e4b4.cloudfront.net (CloudFront)"
-                        },
-                        {
-                          "key": "X-Amz-Cf-Pop",
-                          "value": "IAD89-C3"
-                        },
-                        {
-                          "key": "X-Amz-Cf-Id",
-                          "value": "oRjeQogwBL5HQsnN8gBjIU1pd2wPuDpLvbgNVzeAg4qd5SbSS-eQLg=="
-                        }
-                      ],
-                      "cookie": [],
-                      "responseTime": null,
-                      "body": "{\n    \"message\": \"Quote isn't extendable\"\n}"
-                    }
-                  ]
+                  "response": []
                 }
               ],
               "id": "0d53591e-704f-4b15-85f1-f907132a9426"
@@ -90453,7 +90338,7 @@
   ],
   "variable": [
     {
-      "id": "08ea7a38-58c1-44dd-b5e3-0acf5ccd8492",
+      "id": "974f000f-f81a-4569-9193-78060b413bde",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
