@@ -88961,7 +88961,7 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{baseUrl}}/orders/:id/extend",
+                      "raw": "{{baseUrl}}/orders/:id/extend?hash=ea",
                       "host": [
                         "{{baseUrl}}"
                       ],
@@ -88970,10 +88970,16 @@
                         ":id",
                         "extend"
                       ],
+                      "query": [
+                        {
+                          "key": "hash",
+                          "value": "ea"
+                        }
+                      ],
                       "variable": [
                         {
                           "key": "id",
-                          "value": "63440"
+                          "value": "ea"
                         }
                       ]
                     }
@@ -90324,7 +90330,7 @@
   ],
   "variable": [
     {
-      "id": "5660a096-e139-4474-9e77-e53c00c5ba2d",
+      "id": "53bd05ed-c561-4646-a388-6841d41e119c",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
