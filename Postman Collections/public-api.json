@@ -88961,12 +88961,13 @@
                       },
                       {
                         "key": "X-Idempotency",
-                        "value": "{{idempotency}}",
+                        "value": "ea",
+                        "description": "(Required)",
                         "type": "text"
                       }
                     ],
                     "url": {
-                      "raw": "{{baseUrl}}/orders/:id/extend?hash=bdIX66diWRNGDM9KsGAPOrQcdS7YejkWWv1IFKpAhhkJZxv6oNHIdGM7OTZpsKsEzZpnORlmdCgkjQsmNfiqaEFqcPhLpvZDqbNhrfw5kzKBZQgkAcm05VCu",
+                      "raw": "{{baseUrl}}/orders/:id/extend?hash=ea",
                       "host": [
                         "{{baseUrl}}"
                       ],
@@ -88978,13 +88979,15 @@
                       "query": [
                         {
                           "key": "hash",
-                          "value": "bdIX66diWRNGDM9KsGAPOrQcdS7YejkWWv1IFKpAhhkJZxv6oNHIdGM7OTZpsKsEzZpnORlmdCgkjQsmNfiqaEFqcPhLpvZDqbNhrfw5kzKBZQgkAcm05VCu"
+                          "value": "ea",
+                          "description": "(Required)"
                         }
                       ],
                       "variable": [
                         {
                           "key": "id",
-                          "value": "63440"
+                          "value": "ea",
+                          "description": "(Required)"
                         }
                       ]
                     }
@@ -88992,7 +88995,7 @@
                   "response": [
                     {
                       "id": "582b7669-3011-4926-9356-af166198c3a7",
-                      "name": "/orders/{id}/extend",
+                      "name": "400 response",
                       "originalRequest": {
                         "method": "PUT",
                         "header": [
@@ -90450,7 +90453,7 @@
   ],
   "variable": [
     {
-      "id": "fad5a323-69d1-4394-9636-de74753fcdfc",
+      "id": "e273c911-fe4a-4c52-816c-0523aef92631",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
