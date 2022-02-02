@@ -88958,10 +88958,15 @@
                         "key": "X-Department",
                         "value": "{{department}}",
                         "type": "text"
+                      },
+                      {
+                        "key": "X-Idempotency",
+                        "value": "{{idempotency}}",
+                        "type": "text"
                       }
                     ],
                     "url": {
-                      "raw": "{{baseUrl}}/orders/:id/extend?hash=ea",
+                      "raw": "{{baseUrl}}/orders/:id/extend?hash=bdIX66diWRNGDM9KsGAPOrQcdS7YejkWWv1IFKpAhhkJZxv6oNHIdGM7OTZpsKsEzZpnORlmdCgkjQsmNfiqaEFqcPhLpvZDqbNhrfw5kzKBZQgkAcm05VCu",
                       "host": [
                         "{{baseUrl}}"
                       ],
@@ -88973,13 +88978,13 @@
                       "query": [
                         {
                           "key": "hash",
-                          "value": "ea"
+                          "value": "bdIX66diWRNGDM9KsGAPOrQcdS7YejkWWv1IFKpAhhkJZxv6oNHIdGM7OTZpsKsEzZpnORlmdCgkjQsmNfiqaEFqcPhLpvZDqbNhrfw5kzKBZQgkAcm05VCu"
                         }
                       ],
                       "variable": [
                         {
                           "key": "id",
-                          "value": "ea"
+                          "value": "63440"
                         }
                       ]
                     }
@@ -90330,7 +90335,7 @@
   ],
   "variable": [
     {
-      "id": "53bd05ed-c561-4646-a388-6841d41e119c",
+      "id": "b5558160-57de-485e-a14b-a6fc4211ea1b",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
