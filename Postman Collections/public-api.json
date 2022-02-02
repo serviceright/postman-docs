@@ -88943,7 +88943,7 @@
               "id": "ceb4d86f-9171-469b-8f0b-289fb7f5450d"
             },
             {
-              "name": "pay Copy",
+              "name": "extend",
               "item": [
                 {
                   "name": "/orders/{id}/pay",
@@ -88966,24 +88966,17 @@
                       }
                     ],
                     "url": {
-                      "raw": "{{baseUrl}}/orders/:id/pay?hash=ea",
+                      "raw": "{{baseUrl}}/orders/:id/extend",
                       "host": [
                         "{{baseUrl}}"
                       ],
                       "path": [
                         "orders",
                         ":id",
-                        "pay"
-                      ],
-                      "query": [
-                        {
-                          "key": "hash",
-                          "value": "ea"
-                        }
+                        "extend"
                       ],
                       "variable": [
                         {
-                          "id": "590f947c-ecc2-4feb-b4a3-984c9589c9ce",
                           "key": "id",
                           "value": "ea"
                         }
@@ -90565,7 +90558,7 @@
   ],
   "variable": [
     {
-      "id": "b0e6f5a8-d174-4992-aba7-ef7a4f0ea738",
+      "id": "5d6d99f2-d766-4025-8385-3ae723027298",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
