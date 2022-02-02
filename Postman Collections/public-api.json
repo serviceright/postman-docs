@@ -88943,7 +88943,7 @@
               "id": "ceb4d86f-9171-469b-8f0b-289fb7f5450d"
             },
             {
-              "name": "extend",
+              "name": "pay Copy",
               "item": [
                 {
                   "name": "/orders/{id}/pay",
@@ -90565,7 +90565,7 @@
   ],
   "variable": [
     {
-      "id": "5843a867-0d31-4deb-afc7-b9eca1b67015",
+      "id": "b0e6f5a8-d174-4992-aba7-ef7a4f0ea738",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
