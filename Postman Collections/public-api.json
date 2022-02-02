@@ -88958,11 +88958,6 @@
                         "key": "X-Department",
                         "value": "{{department}}",
                         "type": "text"
-                      },
-                      {
-                        "key": "Accept-Language",
-                        "value": "ea",
-                        "type": "text"
                       }
                     ],
                     "url": {
@@ -88978,7 +88973,7 @@
                       "variable": [
                         {
                           "key": "id",
-                          "value": "ea"
+                          "value": "63440"
                         }
                       ]
                     }
@@ -90329,7 +90324,7 @@
   ],
   "variable": [
     {
-      "id": "c6049d05-06ce-4b6e-8e0a-d45931ab9ea2",
+      "id": "5660a096-e139-4474-9e77-e53c00c5ba2d",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
