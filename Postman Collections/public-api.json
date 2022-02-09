@@ -63878,6 +63878,866 @@
           ]
         },
         {
+          "name": "/services Copy",
+          "id": "5417547d-4554-4c4b-a1f5-b8c8a39842f4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": {
+                "key": "Authorization",
+                "value": true,
+                "in": "header"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Department",
+                "value": "ea"
+              },
+              {
+                "key": "Accept-Language",
+                "value": "ea"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/services?query=ea&data=ea",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "services"
+              ],
+              "query": [
+                {
+                  "key": "query",
+                  "value": "ea"
+                },
+                {
+                  "key": "data",
+                  "value": "ea"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "4a4716cb-b4d0-428d-9e5f-3e6b977ffb75",
+              "name": "200 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": ""
+            },
+            {
+              "id": "fb20346d-11ef-42f3-9f12-41c6ca925100",
+              "name": "400 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": ""
+            },
+            {
+              "id": "97c9e8f9-71d4-4c8b-9aa3-3db156e86101",
+              "name": "401 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+            },
+            {
+              "id": "1c17f2f2-9369-41b0-a4e1-281a6d12fccf",
+              "name": "403 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+            },
+            {
+              "id": "6fb80b30-14c3-44b0-8425-aebf2a10c888",
+              "name": "404 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+            },
+            {
+              "id": "fe5eb4fc-b954-4dfe-9c14-0f877bffd925",
+              "name": "405 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Method Not Allowed",
+              "code": 405,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+            },
+            {
+              "id": "e3e00933-a44a-46d4-b27c-b53b406194a0",
+              "name": "422 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+              "code": 422,
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": ""
+            },
+            {
+              "id": "3788c5be-4992-4f58-9b33-72d2ec9b37c1",
+              "name": "429 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "_postman_previewlanguage": "text",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": ""
+            },
+            {
+              "id": "88912176-3fa0-40df-8131-ee6f8912fed8",
+              "name": "500 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+            },
+            {
+              "id": "0fe09dcb-b6d3-4fd9-8c0f-9d293e6a9d59",
+              "name": "503 response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Department",
+                    "value": "ea"
+                  },
+                  {
+                    "key": "Accept-Language",
+                    "value": "ea"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/services?query=ea&data=ea",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "services"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "ea"
+                    },
+                    {
+                      "key": "data",
+                      "value": "ea"
+                    }
+                  ]
+                }
+              },
+              "status": "Service Unavailable",
+              "code": 503,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Methods",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Max-Age",
+                  "value": "ea"
+                },
+                {
+                  "disabled": false,
+                  "description": "",
+                  "key": "Access-Control-Allow-Headers",
+                  "value": "ea"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+            }
+          ]
+        },
+        {
           "name": "/services",
           "id": "a7120eec-1bcd-423a-8b24-3a32c6358f07",
           "request": {
@@ -90338,7 +91198,7 @@
   ],
   "variable": [
     {
-      "id": "25d4e2b8-81a5-4b5c-879d-2d780dbc31f2",
+      "id": "bbb1f3dd-78de-4aec-ace9-4d5d1a2069e8",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
