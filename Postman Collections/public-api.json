@@ -21574,28 +21574,32 @@
         {
           "name": "/service-points",
           "id": "09b3a796-0b14-40a0-8e20-1f04453f5027",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "auth": {
-              "type": "apikey",
-              "apikey": {
-                "key": "Authorization",
-                "value": true,
-                "in": "header"
-              }
+              "type": "noauth"
             },
             "method": "GET",
             "header": [
               {
                 "key": "X-Department",
-                "value": "ea"
+                "value": "{{department}}",
+                "disabled": true
               },
               {
                 "key": "Accept-Language",
                 "value": "ea"
+              },
+              {
+                "key": "Authorization",
+                "value": "guest",
+                "type": "text"
               }
             ],
             "url": {
-              "raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+              "raw": "{{baseUrl}}/service-points?format=wordpress&department=vehicles",
               "host": [
                 "{{baseUrl}}"
               ],
@@ -21605,23 +21609,32 @@
               "query": [
                 {
                   "key": "query",
-                  "value": "ea"
+                  "value": "ea",
+                  "disabled": true
                 },
                 {
                   "key": "format",
-                  "value": "ea"
+                  "value": "wordpress"
                 },
                 {
                   "key": "limit",
-                  "value": "ea"
+                  "value": "25",
+                  "disabled": true
                 },
                 {
                   "key": "deleted",
-                  "value": "ea"
+                  "value": "ea",
+                  "disabled": true
                 },
                 {
                   "key": "page",
-                  "value": "ea"
+                  "value": "ea",
+                  "disabled": true
+                },
+                {
+                  "key": "department",
+                  "value": "vehicles",
+                  "type": "text"
                 }
               ]
             }
@@ -90338,7 +90351,7 @@
   ],
   "variable": [
     {
-      "id": "f6b4c1b8-22ba-4288-b34c-d1a92b70b343",
+      "id": "bf325bdf-8a6d-42c8-b62e-9bf87357a5a8",
       "key": "baseUrl",
       "value": "https://api.slim-surface-app.com"
     }
