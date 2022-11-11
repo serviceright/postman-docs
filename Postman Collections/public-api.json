@@ -89010,6 +89010,62 @@
 							"id": "0d53591e-704f-4b15-85f1-f907132a9426"
 						},
 						{
+							"name": "accept-terms-and-service",
+							"item": [
+								{
+									"name": "/orders/{id}/extend",
+									"id": "ea0f54b8-fa6b-4f42-a3d0-95f275182104",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "X-Department",
+												"value": "{{department}}",
+												"type": "text"
+											},
+											{
+												"key": "X-Idempotency",
+												"value": "ea",
+												"description": "(Required)",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/orders/:id/extend?hash=ea",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"orders",
+												":id",
+												"extend"
+											],
+											"query": [
+												{
+													"key": "hash",
+													"value": "ea",
+													"description": "(Required)"
+												}
+											],
+											"variable": [
+												{
+													"id": "71228f2d-8a05-43cd-8870-cd082c040dad",
+													"key": "id",
+													"value": "ea",
+													"description": "(Required)"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "816db781-7a2b-442b-b9b9-3e7f459f0b20"
+						},
+						{
 							"name": "payment-options",
 							"item": [
 								{
@@ -90349,7 +90405,7 @@
 	],
 	"variable": [
 		{
-			"id": "6f3a348f-7790-4ab6-8c64-fce0bbfa258d",
+			"id": "578847c9-9774-494a-b92e-25e6be57bc80",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
