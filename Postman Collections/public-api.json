@@ -89058,7 +89058,120 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "d5803bec-a064-4c14-b744-316e2ea508d3",
+											"name": "/orders/{id}/extend",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "X-Department",
+														"value": "{{department}}",
+														"type": "text"
+													},
+													{
+														"key": "X-Idempotency",
+														"value": "ea",
+														"description": "(Required)",
+														"type": "text"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/orders/:id/accept-terms-and-service?hash=HBd9NKqSBjI1aphkt2tjREEe1D0a112xPPiP9cySuE8yAhOybE6uh0M1mqaPLUN5oS5k5S3rHI69I2F8L4PvHL7nKDmzUKdGEkF1AAacsYGPFtUemkon9PSU",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"orders",
+														":id",
+														"accept-terms-and-service"
+													],
+													"query": [
+														{
+															"key": "hash",
+															"value": "HBd9NKqSBjI1aphkt2tjREEe1D0a112xPPiP9cySuE8yAhOybE6uh0M1mqaPLUN5oS5k5S3rHI69I2F8L4PvHL7nKDmzUKdGEkF1AAacsYGPFtUemkon9PSU",
+															"description": "(Required)"
+														}
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "63573"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Date",
+													"value": "Fri, 11 Nov 2022 17:54:48 GMT"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												},
+												{
+													"key": "Transfer-Encoding",
+													"value": "chunked"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												},
+												{
+													"key": "Cache-Control",
+													"value": "no-cache, private"
+												},
+												{
+													"key": "Vary",
+													"value": "X-Country, X-Department, on-behalf-of, accept, accept-language, Origin"
+												},
+												{
+													"key": "Strict-Transport-Security",
+													"value": "max-age=31536000; includeSubDomains; preload"
+												},
+												{
+													"key": "X-Content-Type-Options",
+													"value": "nosniff"
+												},
+												{
+													"key": "X-Frame-Options",
+													"value": "DENY"
+												},
+												{
+													"key": "Content-Security-Policy",
+													"value": "default-src 'self'; font-src *;img-src * data:; script-src *; style-src *"
+												},
+												{
+													"key": "X-Request-ID",
+													"value": "f106c5305f850aeafadba70131e11212"
+												},
+												{
+													"key": "Access-Control-Allow-Origin",
+													"value": "*"
+												},
+												{
+													"key": "Access-Control-Max-Age",
+													"value": "600"
+												},
+												{
+													"key": "Access-Control-Allow-Methods",
+													"value": "OPTIONS, HEAD, GET, POST, PUT, PATCH, DELETE"
+												},
+												{
+													"key": "Access-Control-Allow-Headers",
+													"value": "Authorization, X-Department, X-Country, on-behalf-of, X-Captcha, X-Socket-ID, X-Socket-App, X-Idempotency, content-type"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n    \"message\": \"Terms of service of the order has been successfully accepted\",\n    \"id\": 63573\n}"
+										}
+									]
 								}
 							],
 							"id": "816db781-7a2b-442b-b9b9-3e7f459f0b20"
@@ -90403,7 +90516,7 @@
 	],
 	"variable": [
 		{
-			"id": "4c250af0-749f-45c5-8e9a-7f1939dd70d7",
+			"id": "6841ccdd-d4cc-48ca-b8e0-f381c8e04243",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
