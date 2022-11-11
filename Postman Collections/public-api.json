@@ -89061,7 +89061,7 @@
 									"response": [
 										{
 											"id": "d5803bec-a064-4c14-b744-316e2ea508d3",
-											"name": "/orders/{id}/extend",
+											"name": "200 response",
 											"originalRequest": {
 												"method": "PUT",
 												"header": [
@@ -90516,7 +90516,7 @@
 	],
 	"variable": [
 		{
-			"id": "6841ccdd-d4cc-48ca-b8e0-f381c8e04243",
+			"id": "dbd7c524-6499-42c1-ae29-49c4c050c1e4",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
