@@ -22591,9 +22591,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/service-points/wordpress?department=vehicles",
+							"raw": "https://2dfa6bce72ba.ngrok.io/service-points/wordpress?department=vehicles",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"2dfa6bce72ba",
+								"ngrok",
+								"io"
 							],
 							"path": [
 								"service-points",
@@ -91484,7 +91487,7 @@
 	],
 	"variable": [
 		{
-			"id": "15e96f7b-f97f-4a4c-8eab-491b0f1a15e2",
+			"id": "50fed765-a300-4574-b193-ed9a4ceec57c",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
