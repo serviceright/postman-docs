@@ -22590,42 +22590,18 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/service-points?format=wordpress&department=vehicles",
+							"raw": "{{baseUrl}}/service-points/wordpress?department=vehicles",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"service-points"
+								"service-points",
+								"wordpress"
 							],
 							"query": [
 								{
-									"key": "query",
-									"value": "ea",
-									"disabled": true
-								},
-								{
-									"key": "format",
-									"value": "wordpress"
-								},
-								{
-									"key": "limit",
-									"value": "25",
-									"disabled": true
-								},
-								{
-									"key": "deleted",
-									"value": "ea",
-									"disabled": true
-								},
-								{
-									"key": "page",
-									"value": "ea",
-									"disabled": true
-								},
-								{
 									"key": "department",
-									"value": "vehicles",
-									"type": "text"
+									"value": "vehicles"
 								}
 							]
 						}
@@ -91507,7 +91483,7 @@
 	],
 	"variable": [
 		{
-			"id": "fa135efb-c9bb-4384-86a3-52dbc0bd3dc9",
+			"id": "84b278b4-0261-49f8-81c2-886c759544e9",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
