@@ -22563,6 +22563,993 @@
 					]
 				},
 				{
+					"name": "/service-points/wordpress",
+					"id": "5c46ccfd-9900-4751-843a-c32eda1168f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Department",
+								"value": "{{department}}",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ea"
+							},
+							{
+								"key": "Authorization",
+								"value": "guest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/service-points/wordpress?department=vehicles",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"service-points",
+								"wordpress"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "ea",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "25",
+									"disabled": true
+								},
+								{
+									"key": "deleted",
+									"value": "ea",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "ea",
+									"disabled": true
+								},
+								{
+									"key": "department",
+									"value": "vehicles"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "37590361-ce19-483b-9998-a45d22f69d28",
+							"name": "405 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+						},
+						{
+							"id": "122baea3-c149-41f1-af8c-416aa9da1785",
+							"name": "401 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+						},
+						{
+							"id": "94b88f6f-7f4f-4547-8edb-53fc366110cc",
+							"name": "200 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						},
+						{
+							"id": "9dde3a74-99d2-4f67-9e45-d8996b3be206",
+							"name": "500 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+						},
+						{
+							"id": "83d93b74-1725-4071-97e2-4154d4c6c962",
+							"name": "403 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+						},
+						{
+							"id": "d8444208-cc80-4579-aae0-71dcd4837028",
+							"name": "503 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+						},
+						{
+							"id": "a2063d85-284d-4a1d-ba8a-e11746a887e1",
+							"name": "400 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						},
+						{
+							"id": "6260dbd1-8668-42d8-ae07-152007f72fa8",
+							"name": "404 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+						},
+						{
+							"id": "7a3f80d9-dc2e-45d6-af72-3198253543f5",
+							"name": "422 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						},
+						{
+							"id": "4e5e158a-e7bd-4d6d-a9f5-ac932802841f",
+							"name": "429 response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "Authorization",
+										"value": "<API Key>"
+									},
+									{
+										"key": "X-Department",
+										"value": "ea"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/service-points?query=ea&format=ea&limit=ea&deleted=ea&page=ea",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"service-points"
+									],
+									"query": [
+										{
+											"key": "query",
+											"value": "ea"
+										},
+										{
+											"key": "format",
+											"value": "ea"
+										},
+										{
+											"key": "limit",
+											"value": "ea"
+										},
+										{
+											"key": "deleted",
+											"value": "ea"
+										},
+										{
+											"key": "page",
+											"value": "ea"
+										}
+									]
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Origin",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Methods",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Max-Age",
+									"value": "ea"
+								},
+								{
+									"disabled": false,
+									"description": "",
+									"key": "Access-Control-Allow-Headers",
+									"value": "ea"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						}
+					]
+				},
+				{
 					"name": "{{base_url}}/Service-pionts",
 					"event": [
 						{
@@ -90516,7 +91503,7 @@
 	],
 	"variable": [
 		{
-			"id": "dbd7c524-6499-42c1-ae29-49c4c050c1e4",
+			"id": "57a89e32-b1d0-4d6d-8380-49fc8ca0cf6d",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
