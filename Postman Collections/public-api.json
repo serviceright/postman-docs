@@ -22586,7 +22586,8 @@
 							{
 								"key": "Authorization",
 								"value": "guest",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -91483,7 +91484,7 @@
 	],
 	"variable": [
 		{
-			"id": "84b278b4-0261-49f8-81c2-886c759544e9",
+			"id": "15e96f7b-f97f-4a4c-8eab-491b0f1a15e2",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
