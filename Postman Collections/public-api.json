@@ -81921,11 +81921,6 @@
 			"id": "dd7e3499-19da-41f7-ad2d-c8235ac3da8a"
 		},
 		{
-			"name": "traffic",
-			"item": [],
-			"id": "c85141ed-bf70-4b5e-ba2f-2cba6d157f54"
-		},
-		{
 			"name": "customers/{customer}/invoices",
 			"item": [
 				{
@@ -89442,7 +89437,7 @@
 	],
 	"variable": [
 		{
-			"id": "5236b105-f89a-4da9-95d0-50edc8957aab",
+			"id": "97784b6d-e3e8-47c3-99c0-b2384468224e",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
