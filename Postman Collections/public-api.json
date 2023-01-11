@@ -83190,68 +83190,6 @@
 					"id": "0daffa2c-ea87-4724-b388-eaba0c817acb"
 				},
 				{
-					"name": "me",
-					"item": [
-						{
-							"name": "/traffic/me",
-							"id": "e62ad746-1b4a-4561-a8d3-1b1c14fe9c26",
-							"request": {
-								"method": "OPTIONS",
-								"header": [],
-								"url": "{{baseUrl}}/traffic/me"
-							},
-							"response": [
-								{
-									"id": "b1359f67-531e-4f88-9cd7-9d676bbe3aa8",
-									"name": "200 response",
-									"originalRequest": {
-										"method": "OPTIONS",
-										"header": [],
-										"url": "{{baseUrl}}/traffic/me"
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"disabled": false,
-											"description": "",
-											"key": "Access-Control-Allow-Origin",
-											"value": "ea"
-										},
-										{
-											"disabled": false,
-											"description": "",
-											"key": "Access-Control-Allow-Methods",
-											"value": "ea"
-										},
-										{
-											"disabled": false,
-											"description": "",
-											"key": "Access-Control-Max-Age",
-											"value": "ea"
-										},
-										{
-											"disabled": false,
-											"description": "",
-											"key": "Access-Control-Allow-Headers",
-											"value": "ea"
-										},
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{}"
-								}
-							]
-						}
-					],
-					"id": "12889ce4-2232-4d02-93e1-b1b505f42140"
-				},
-				{
 					"name": "external-id",
 					"item": [
 						{
@@ -90916,7 +90854,7 @@
 	],
 	"variable": [
 		{
-			"id": "c4f2e9a8-c1da-4067-a76c-0a07b387d7ed",
+			"id": "15d0cc65-517c-47be-ba91-7404ee12f837",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
