@@ -89167,28 +89167,18 @@
 							{
 								"key": "Accept-Language",
 								"value": "ea"
-							},
-							{
-								"description": "(Required) ",
-								"key": "X-Idempotency",
-								"value": "{{X-Idempotency}}"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer {{token}}",
-								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"vehicle_id\":3085,\n    \"salutation\":\"Mr\",\n    \"name\":\"TestName\",\n    \"email\":\"test@eeee.com\",\n    \"phone\":\"1234567891\",\n    \"country\":\"NL\",\n    \"zip_code\":\"1314sk\",\n    \"street_number\":\"124\",\n    \"street\":\"Landdrostdreef\",\n    \"city\":\"Almere\",\n    \"news_letter_acceptance\":true,\n    \"delivery_option_id\":5,\n    \"tos_acceptance\":true,\n    \"preferred_date\":[{\"date\":\"27-09-2021\",\"time\":\"11:00\"}],\n    \"services\":[{\"id\":4},{\"id\":5}],\n    \"comment\":\"test\",\n    \"license-plate\":\"8XPL60\",\n    \"payment_method\":{\"id\":4}\n}",
+							"raw": "{\n    \"name\":\"TestName\",\n    \"email\":\"test@eeee.com\",\n    \"phone\":\"1234567891\",\n    \"comment\":\"test\",\n    \"license-plate\":\"8XPL60\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{baseUrl}}/orders"
+						"url": "{{baseUrl}}/orders/draft"
 					},
 					"response": [
 						{
@@ -90047,7 +90037,7 @@
 	],
 	"variable": [
 		{
-			"id": "1f652e9e-9354-437f-b303-d1860bc77f8c",
+			"id": "a6f6443a-cdf4-4b08-a19d-eedf282327df",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
