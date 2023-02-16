@@ -89127,6 +89127,616 @@
 					]
 				},
 				{
+					"name": "/orders/draft",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "d18e3788-64d3-417c-8d35-112514a5b539",
+								"exec": [
+									"pm.environment.set(\"random_number\", _.random(1, 9));",
+									"pm.environment.set(\"random_number2\", _.random(10, 99));",
+									"pm.environment.set(\"random_number3\", _.random(100, 999));",
+									"",
+									"var rNo  = pm.environment.get(\"random_number\");",
+									"var rNo2 = pm.environment.get(\"random_number2\");",
+									"var rNo3 = pm.environment.get(\"random_number3\");",
+									"",
+									"var impo = \"a5f6e54f-\"+rNo3+\"a-46e9-b2fe-\"+rNo2+\"1cf7870ef\"+rNo",
+									"pm.environment.set(\"X-Idempotency\",impo)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ab0428db-a23f-46bf-9a24-945b2b8c1b8e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "X-Department",
+								"value": "{{department}}"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "ea"
+							},
+							{
+								"description": "(Required) ",
+								"key": "X-Idempotency",
+								"value": "{{X-Idempotency}}"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vehicle_id\":3085,\n    \"salutation\":\"Mr\",\n    \"name\":\"TestName\",\n    \"email\":\"test@eeee.com\",\n    \"phone\":\"1234567891\",\n    \"country\":\"NL\",\n    \"zip_code\":\"1314sk\",\n    \"street_number\":\"124\",\n    \"street\":\"Landdrostdreef\",\n    \"city\":\"Almere\",\n    \"news_letter_acceptance\":true,\n    \"delivery_option_id\":5,\n    \"tos_acceptance\":true,\n    \"preferred_date\":[{\"date\":\"27-09-2021\",\"time\":\"11:00\"}],\n    \"services\":[{\"id\":4},{\"id\":5}],\n    \"comment\":\"test\",\n    \"license-plate\":\"8XPL60\",\n    \"payment_method\":{\"id\":4}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/orders"
+					},
+					"response": [
+						{
+							"id": "ac7e903f-3e0f-467b-a15c-5a55d6746def",
+							"name": "422",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "X-Department",
+										"value": "{{department}}"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									},
+									{
+										"description": "(Required) ",
+										"key": "X-Idempotency",
+										"value": "{{X-Idempotency}}"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"vehicle_id\":0,\n\"salutation\":\"Mr\",\n\"name\":\"Banwa\",\n\"email\":\"banwa@wohoo.com\",\n\"phone\":\"23456543\",\n\"country\":\"\",\n\"zip_code\":\"\",\n\"street_number\":\"\",\n\"street\":\"\",\n\"city\":\"\",\n\"news_letter_acceptance\":true,\n\"delivery_option_id\":0,\n\"tos_acceptance\":true,\n\"preferred_date\":[{\"date\":\"\",\"time\":\"\"}],\n\"services\":[{\"id\":0}],\n\"license-plate\":\"\",\n\"comment\":\"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/orders"
+							},
+							"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 09:08:02 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "6ca2e1cc-ec3a-4bc1-9643-d8a86d17a61f"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Department,X-Country,X-Captcha,X-Socket-Id,x-dynatrace,x-dynatrace-application,x-dynatrace-origin-url,x-dtHealthCheck,X-dynaTrace-RequestState,x-dtpc,x-dtreferer,x-dtc,Cookie,X-Ruxit-Forwarded-For,referer"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "Eqr97G-AliAFZ_Q="
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-612759f2-6a64bebe28ec62667a7b1789;Sampled=0"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "7200"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 c1802b2f6f4e591b6df12b5a8a9876a7.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "IAD89-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "7sMnWT-sEfw_mUj20S-QqF8iR1QRqZvZT-CoM0lqMyC9qoy3RPr2lg=="
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"The given data was invalid.\",\n    \"errors\": {\n        \"license-plate\": [\n            \"The license-plate must be a string.\",\n            \"The license-plate must be at least 2 characters.\"\n        ],\n        \"construction_year\": [\n            \"The construction year field is required when license-plate is not present.\"\n        ]\n    }\n}"
+						},
+						{
+							"id": "5a00f200-dee4-4385-992c-84aafb8c683f",
+							"name": "401",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "X-Department",
+										"value": "{{department}}"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									},
+									{
+										"description": "(Required) ",
+										"key": "X-Idempotency",
+										"value": "{{X-Idempotency}}"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"vehicle_id\":0,\n\"salutation\":\"Mr\",\n\"name\":\"Banwa\",\n\"email\":\"banwa@wohoo.com\",\n\"phone\":\"23456543\",\n\"country\":\"\",\n\"zip_code\":\"\",\n\"street_number\":\"\",\n\"street\":\"\",\n\"city\":\"\",\n\"news_letter_acceptance\":true,\n\"delivery_option_id\":0,\n\"tos_acceptance\":true,\n\"preferred_date\":[{\"date\":\"\",\"time\":\"\"}],\n\"services\":[{\"id\":0}],\n\"license-plate\":\"\",\n\"comment\":\"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/orders"
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 09:09:24 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "3a24e5dc-71f6-4347-8420-bfb2f9610035"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "*"
+								},
+								{
+									"key": "x-amzn-ErrorType",
+									"value": "UnauthorizedException"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "EqsKqH8eliAFmdw="
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 c1802b2f6f4e591b6df12b5a8a9876a7.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "IAD89-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "V_rUibr8WGd3YmocTiaUDZBkeoUGoKweJKwRye8vmXCA4qjz2XnWZA=="
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Unauthorized\",\n    \"status_code\": 401\n}"
+						},
+						{
+							"id": "beee0dc3-ce3a-433c-9e70-78338f0019c8",
+							"name": "500",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "X-Department",
+										"value": "{{department}}"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									},
+									{
+										"description": "(Required) ",
+										"key": "X-Idempotency",
+										"value": "{{X-Idempotency}}"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"vehicle_id\":0,\n\"salutation\":\"Mr\",\n\"name\":\"Banwa\",\n\"email\":\"banwa@wohoo.com\",\n\"phone\":\"23456543\",\n\"country\":\"\",\n\"zip_code\":\"\",\n\"street_number\":\"\",\n\"street\":\"\",\n\"city\":\"\",\n\"news_letter_acceptance\":true,\n\"delivery_option_id\":0,\n\"tos_acceptance\":true,\n\"preferred_date\":[{\"date\":\"\",\"time\":\"\"}],\n\"services\":[{\"id\":0}],\n\"license-plate\":\"8ddf52\",\n\"comment\":\"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/orders"
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "73"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 09:10:22 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "8712d070-31f6-4399-8213-e76534c015dd"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Department,X-Country,X-Captcha,X-Socket-Id,x-dynatrace,x-dynatrace-application,x-dynatrace-origin-url,x-dtHealthCheck,X-dynaTrace-RequestState,x-dtpc,x-dtreferer,x-dtc,Cookie,X-Ruxit-Forwarded-For,referer"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "EqsTsEJ3FiAFkXw="
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-61275a7d-1ab4a8493c116d56215ec798;Sampled=0"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "7200"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Error from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 1448f69604d5be1f9c9f0c64cfa90595.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "IAD89-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "LiV6aQDGprlzOnKdY84jCbR0Fz204gTBqaigkQIkbGdDM9ArhQjVfw=="
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"message\": \"Something went wrong\",\n    \"status_code\": 500\n}"
+						},
+						{
+							"id": "94c802ef-432b-44f5-892f-6bd51d9b6eaf",
+							"name": "200",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "X-Department",
+										"value": "{{department}}"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									},
+									{
+										"description": "(Required) ",
+										"key": "X-Idempotency",
+										"value": "{{X-Idempotency}}"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"vehicle_id\":3085,\n    \"salutation\":\"Mr\",\n    \"name\":\"TestName\",\n    \"email\":\"test@eeee.com\",\n    \"phone\":\"213456\",\n    \"country\":\"NL\",\n    \"zip_code\":\"1314sk\",\n    \"street_number\":\"124\",\n    \"street\":\"Landdrostdreef\",\n    \"city\":\"Almere\",\n    \"news_letter_acceptance\":true,\n    \"delivery_option_id\":5,\n    \"tos_acceptance\":true,\n    \"preferred_date\":[{\"date\":\"27-08-2021\",\"time\":\"11:00\"}],\n    \"services\":[{\"id\":11},{\"id\":4},{\"id\":9}],\n    \"comment\":\"test\",\n    \"license-plate\":\"8XPL60\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/orders"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "152"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 26 Aug 2021 09:13:07 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "c10c7d6c-aa7b-4aa7-a05e-cfab15413285"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Department,X-Country,X-Captcha,X-Socket-Id,x-dynatrace,x-dynatrace-application,x-dynatrace-origin-url,x-dtHealthCheck,X-dynaTrace-RequestState,x-dtpc,x-dtreferer,x-dtc,Cookie,X-Ruxit-Forwarded-For,referer"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "EqstjFPfFiAFpfg="
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-61275b23-1c0de95e506aed557299ddf9;Sampled=0"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "7200"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 7b32163caf7e91fe96df7bbeaa58c0f9.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "IAD89-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "799FKGCl5OzrwaWGcG8QyCcmnsHuPRYMLb3w6xu7i-Zpf5it3CC4lw=="
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": 63137,\n    \"redirect_location\": \"https://serviceright-autos.nl/bedankt?order_id=63137&idempotency=a5f6e54f-291a-46e9-b2fe-831cf7870ef1&price=17850\"\n}"
+						},
+						{
+							"id": "b97d05e7-69c7-4860-a445-aece3f898020",
+							"name": "200 response with payment url",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "X-Department",
+										"value": "{{department}}"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ea"
+									},
+									{
+										"description": "(Required) ",
+										"key": "X-Idempotency",
+										"value": "{{X-Idempotency}}"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"vehicle_id\":3085,\n    \"salutation\":\"Mr\",\n    \"name\":\"TestName\",\n    \"email\":\"test@eeee.com\",\n    \"phone\":\"213456\",\n    \"country\":\"NL\",\n    \"zip_code\":\"1314sk\",\n    \"street_number\":\"124\",\n    \"street\":\"Landdrostdreef\",\n    \"city\":\"Almere\",\n    \"news_letter_acceptance\":true,\n    \"delivery_option_id\":5,\n    \"tos_acceptance\":true,\n    \"preferred_date\":[{\"date\":\"27-09-2021\",\"time\":\"11:00\"}],\n    \"services\":[{\"id\":4},{\"id\":5}],\n    \"comment\":\"test\",\n    \"license-plate\":\"8XPL60\",\n    \"payment_method\":{\"id\":1}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/orders"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Sep 2021 17:26:59 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "c1105fcf-0f8a-4c19-9474-cd4d3ab9ea7e"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Department,X-Country,X-Captcha,X-Socket-Id,x-dynatrace,x-dynatrace-application,x-dynatrace-origin-url,x-dtHealthCheck,X-dynaTrace-RequestState,x-dtpc,x-dtreferer,x-dtc,Cookie,X-Ruxit-Forwarded-For,referer"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "FZ-LaEODFiAFgig="
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-613a43e2-05f88e3f117e248125a3b875;Sampled=0"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "7200"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 df08ba5d249ec7fb2513313ea66b59f9.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "IAD50-C2"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "motEDaLxekWgqZWlQ5l0EPOZXUKMz80UScgnAiqPK8IwoTuZ9r2O5Q=="
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"id\": 63169,\n    \"redirect_location\": \"https://autos.slim-surface-app.com/orders/63169/pay?secret_hash=5wGQqYBdyubODAdOZA7nqI25Sn0HpD2M5Vl2FcIertAboQTL6DqFXAZoBxFEBIHEqB3y0PFRqipgPf7xT3MZIkxR2uQcauKXDxIODOyPjRJbBWGhZ2rr8ErX\"\n}"
+						}
+					]
+				},
+				{
 					"name": "/orders Couriers",
 					"event": [
 						{
@@ -89437,7 +90047,7 @@
 	],
 	"variable": [
 		{
-			"id": "97784b6d-e3e8-47c3-99c0-b2384468224e",
+			"id": "1f652e9e-9354-437f-b303-d1860bc77f8c",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
