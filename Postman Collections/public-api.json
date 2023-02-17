@@ -27447,7 +27447,7 @@
 												"value": "ea"
 											}
 										],
-										"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+										"url": "{{baseUrl}}/system/departments/find-by-hostname"
 									},
 									"response": [
 										{
@@ -90332,7 +90332,7 @@
 	],
 	"variable": [
 		{
-			"id": "f06c8030-f97f-4f85-b773-4de331468b33",
+			"id": "9e0cc4ca-3b54-4b3d-9e43-a100c36ccb2e",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
