@@ -27447,7 +27447,23 @@
 												"value": "ea"
 											}
 										],
-										"url": "{{baseUrl}}/system/departments/find-by-hostname"
+										"url": {
+											"raw": "{{baseUrl}}/system/departments/find-by-hostname?hostname=vehicles",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"system",
+												"departments",
+												"find-by-hostname"
+											],
+											"query": [
+												{
+													"key": "hostname",
+													"value": "vehicles"
+												}
+											]
+										}
 									},
 									"response": [
 										{
@@ -90332,7 +90348,7 @@
 	],
 	"variable": [
 		{
-			"id": "9e0cc4ca-3b54-4b3d-9e43-a100c36ccb2e",
+			"id": "74eb4caa-a336-4279-809e-af7469f9225d",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
