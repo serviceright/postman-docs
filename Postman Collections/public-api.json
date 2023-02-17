@@ -27527,66 +27527,6 @@
 											"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
 										},
 										{
-											"id": "36060a04-8149-4c21-87be-e730a56dedbf",
-											"name": "400 response",
-											"originalRequest": {
-												"method": "GET",
-												"header": [
-													{
-														"description": "(Required) ",
-														"key": "Origin",
-														"value": "ea"
-													},
-													{
-														"description": "(Required) ",
-														"key": "X-Department",
-														"value": "ea"
-													},
-													{
-														"key": "Accept-Language",
-														"value": "ea"
-													}
-												],
-												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
-											},
-											"status": "Bad Request",
-											"code": 400,
-											"_postman_previewlanguage": "text",
-											"header": [
-												{
-													"disabled": false,
-													"description": "",
-													"key": "Access-Control-Allow-Origin",
-													"value": "ea"
-												},
-												{
-													"disabled": false,
-													"description": "",
-													"key": "Access-Control-Allow-Methods",
-													"value": "ea"
-												},
-												{
-													"disabled": false,
-													"description": "",
-													"key": "Access-Control-Max-Age",
-													"value": "ea"
-												},
-												{
-													"disabled": false,
-													"description": "",
-													"key": "Access-Control-Allow-Headers",
-													"value": "ea"
-												},
-												{
-													"key": "Content-Type",
-													"value": "text/plain"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": ""
-										},
-										{
 											"id": "3a44e450-de92-463d-98f6-be682ffe3073",
 											"name": "422 response",
 											"originalRequest": {
@@ -89872,7 +89812,7 @@
 	],
 	"variable": [
 		{
-			"id": "ad84b377-d83f-4c3c-9682-d05c13d26ac8",
+			"id": "442d78ce-c4d9-4f57-96a0-dbb4c0452c86",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
