@@ -27467,66 +27467,6 @@
 									},
 									"response": [
 										{
-											"id": "51fc6912-733d-408b-b83b-77c62bc320cd",
-											"name": "503 response",
-											"originalRequest": {
-												"method": "GET",
-												"header": [
-													{
-														"description": "(Required) ",
-														"key": "Origin",
-														"value": "ea"
-													},
-													{
-														"description": "(Required) ",
-														"key": "X-Department",
-														"value": "ea"
-													},
-													{
-														"key": "Accept-Language",
-														"value": "ea"
-													}
-												],
-												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
-											},
-											"status": "Service Unavailable",
-											"code": 503,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"disabled": false,
-													"description": "",
-													"key": "Access-Control-Allow-Origin",
-													"value": "ea"
-												},
-												{
-													"disabled": false,
-													"description": "",
-													"key": "Access-Control-Allow-Methods",
-													"value": "ea"
-												},
-												{
-													"disabled": false,
-													"description": "",
-													"key": "Access-Control-Max-Age",
-													"value": "ea"
-												},
-												{
-													"disabled": false,
-													"description": "",
-													"key": "Access-Control-Allow-Headers",
-													"value": "ea"
-												},
-												{
-													"key": "Content-Type",
-													"value": "application/json"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
-										},
-										{
 											"id": "8660cb51-eec5-4ed5-ab95-9043552fda8e",
 											"name": "429 response",
 											"originalRequest": {
@@ -90348,7 +90288,7 @@
 	],
 	"variable": [
 		{
-			"id": "74eb4caa-a336-4279-809e-af7469f9225d",
+			"id": "e1bf0371-0977-4b37-a15f-6f8f0b8fc282",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
