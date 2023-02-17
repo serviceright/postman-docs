@@ -27424,7 +27424,7 @@
 							"id": "c8b519bf-58e1-4532-80c7-008afa1e817c"
 						},
 						{
-							"name": "system/departments/find-by-hostname",
+							"name": "find-by-hostname",
 							"item": [
 								{
 									"name": "/system/departments/identify-by-hostname",
@@ -90332,7 +90332,7 @@
 	],
 	"variable": [
 		{
-			"id": "0cebe493-5149-4a77-8ffc-f9b07f7663c3",
+			"id": "f86882ba-d995-473d-ac44-79f4cad3f763",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
