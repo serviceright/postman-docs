@@ -21179,399 +21179,6 @@
 					"id": "a5be80ce-aba2-4d8e-ac16-b68ace92363b"
 				},
 				{
-					"name": "chamber-of-commerce",
-					"item": [
-						{
-							"name": "/service-points/chamber-of-commerce",
-							"id": "9068d1bc-c173-4e83-88a6-2d386a9b6dd7",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/service-points/chamber-of-commerce?q={{random_number3}}&limit={{address_limit}}",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"service-points",
-										"chamber-of-commerce"
-									],
-									"query": [
-										{
-											"key": "q",
-											"value": "{{random_number3}}"
-										},
-										{
-											"key": "limit",
-											"value": "{{address_limit}}"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "24855969-ee9d-4914-8298-d405f1d9c152",
-									"name": "200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "Bearer {{token}}",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "{{baseUrl}}/service-points/chamber-of-commerce?q={{random_number3}}&limit={{address_limit}}",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"service-points",
-												"chamber-of-commerce"
-											],
-											"query": [
-												{
-													"key": "q",
-													"value": "{{random_number3}}"
-												},
-												{
-													"key": "limit",
-													"value": "{{address_limit}}"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "Content-Length",
-											"value": "565"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 26 Aug 2021 09:27:38 GMT"
-										},
-										{
-											"key": "x-amzn-RequestId",
-											"value": "28451e9c-3711-4978-ab80-9bff60893b98"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Access-Control-Allow-Headers",
-											"value": "Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Department,X-Country,X-Captcha,X-Socket-Id,x-dynatrace,x-dynatrace-application,x-dynatrace-origin-url,x-dtHealthCheck,X-dynaTrace-RequestState,x-dtpc,x-dtreferer,x-dtc,Cookie,X-Ruxit-Forwarded-For,referer"
-										},
-										{
-											"key": "x-amz-apigw-id",
-											"value": "Equ1mFYfFiAFhmQ="
-										},
-										{
-											"key": "Access-Control-Allow-Methods",
-											"value": "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
-										},
-										{
-											"key": "X-Amzn-Trace-Id",
-											"value": "Root=1-61275e8a-35bb6c64447f92be799596ed;Sampled=0"
-										},
-										{
-											"key": "Access-Control-Max-Age",
-											"value": "7200"
-										},
-										{
-											"key": "X-Cache",
-											"value": "Miss from cloudfront"
-										},
-										{
-											"key": "Via",
-											"value": "1.1 6bc1c280aeef9bbdeb102c7f4e4f773e.cloudfront.net (CloudFront)"
-										},
-										{
-											"key": "X-Amz-Cf-Pop",
-											"value": "IAD89-C1"
-										},
-										{
-											"key": "X-Amz-Cf-Id",
-											"value": "2ntYAGknkXSI80o29wAv91djfKU4gzHFnkLoGoOnYLs7lDgyRfdG3g=="
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"data\": [\n        {\n            \"name\": \"291\",\n            \"coc\": \"27376293\",\n            \"tradename\": \"Vereniging van Eigenaars Appartementen Parkzoom 269 tot en met 291\",\n            \"city\": \"Wateringen\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=27376293\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"34387366\",\n            \"tradename\": \"Vereniging van Eigenaren Van Spilbergenstraat 29 huis, 29-1, 29-2, 29-3, gevestigd te Amsterdam\",\n            \"city\": \"Amsterdam\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=34387366\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"73753475\",\n            \"tradename\": \"Food Trading 291\",\n            \"city\": \"Putten\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=73753475\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"68577230\",\n            \"tradename\": \"RFP 291\",\n            \"city\": \"Epe\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=68577230\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"72114789\",\n            \"tradename\": \"International Meat Trading 291\",\n            \"city\": \"Putten\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=72114789\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"58066993\",\n            \"tradename\": \"V.V.E. van het perceel Barentzstraat 277 en 285 tot en met 291 (oneven nummers) te Amsterdam\",\n            \"city\": \"Amsterdam\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=58066993\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"61721107\",\n            \"tradename\": \"Vereniging van Eigenaars Van Ostadestraat 291 te Amsterdam\",\n            \"city\": \"Amsterdam\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=61721107\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"77058054\",\n            \"tradename\": \"Vereniging van Eigenaars GaragePark Groningen aan de Verlengde Bremenweg 29-1 t/m 29-51 te Groningen\",\n            \"city\": \"Groningen\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=77058054\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"61997021\",\n            \"tradename\": \"Corendon Village Vastgoed nr 291 B.V.\",\n            \"city\": \"Groningen\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=61997021\"\n        },\n        {\n            \"name\": \"291\",\n            \"coc\": \"20171434\",\n            \"tradename\": \"Vereniging van Eigenaars Bavelselaan 291 en 291a\",\n            \"city\": \"Breda\",\n            \"link\": \"https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=20171434\"\n        }\n    ]\n}"
-								}
-							]
-						},
-						{
-							"name": "/service-points/chamber-of-commerce/{coc}",
-							"id": "1f29a478-3e67-43c3-b84d-39273b1e610f",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "Bearer {{token}}",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/service-points/chamber-of-commerce/:coc",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"service-points",
-										"chamber-of-commerce",
-										":coc"
-									],
-									"variable": [
-										{
-											"key": "coc",
-											"value": "ea"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "8d89b6d6-0273-4cd4-adc3-fb43bd2cd7e6",
-									"name": "404",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "Bearer {{token}}",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "{{baseUrl}}/service-points/chamber-of-commerce/:coc",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"service-points",
-												"chamber-of-commerce",
-												":coc"
-											],
-											"variable": [
-												{
-													"key": "coc",
-													"value": "61732664"
-												}
-											]
-										}
-									},
-									"status": "Not Found",
-									"code": 404,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "Content-Length",
-											"value": "62"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 26 Aug 2021 09:29:09 GMT"
-										},
-										{
-											"key": "x-amzn-RequestId",
-											"value": "afbdc9a7-aec2-42be-beb9-55489f6da358"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Access-Control-Allow-Headers",
-											"value": "Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Department,X-Country,X-Captcha,X-Socket-Id,x-dynatrace,x-dynatrace-application,x-dynatrace-origin-url,x-dtHealthCheck,X-dynaTrace-RequestState,x-dtpc,x-dtreferer,x-dtc,Cookie,X-Ruxit-Forwarded-For,referer"
-										},
-										{
-											"key": "x-amz-apigw-id",
-											"value": "EqvDxH1IliAFcnQ="
-										},
-										{
-											"key": "Access-Control-Allow-Methods",
-											"value": "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
-										},
-										{
-											"key": "X-Amzn-Trace-Id",
-											"value": "Root=1-61275ee4-3abb5d866f9b80555d3d5f3f;Sampled=0"
-										},
-										{
-											"key": "Access-Control-Max-Age",
-											"value": "7200"
-										},
-										{
-											"key": "X-Cache",
-											"value": "Error from cloudfront"
-										},
-										{
-											"key": "Via",
-											"value": "1.1 2e50d9b1ee017f302768660f02b7418e.cloudfront.net (CloudFront)"
-										},
-										{
-											"key": "X-Amz-Cf-Pop",
-											"value": "IAD89-C1"
-										},
-										{
-											"key": "X-Amz-Cf-Id",
-											"value": "rqjcqfiy1CgOmloNAJm8CoNObdR3og4K89sC_i7AuEjOPK8jyDqetg=="
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"message\": \"Not Found\",\n    \"status_code\": 404\n}"
-								},
-								{
-									"id": "dbfe65ef-474c-4e79-9a67-e5095a8548ca",
-									"name": "200",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"key": "Authorization",
-												"value": "Bearer {{token}}",
-												"type": "text"
-											}
-										],
-										"url": {
-											"raw": "{{baseUrl}}/service-points/chamber-of-commerce/:coc",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"service-points",
-												"chamber-of-commerce",
-												":coc"
-											],
-											"variable": [
-												{
-													"key": "coc",
-													"value": "56214138"
-												}
-											]
-										}
-									},
-									"status": "OK",
-									"code": 200,
-									"_postman_previewlanguage": "json",
-									"header": [
-										{
-											"key": "Content-Type",
-											"value": "application/json"
-										},
-										{
-											"key": "Content-Length",
-											"value": "236"
-										},
-										{
-											"key": "Connection",
-											"value": "keep-alive"
-										},
-										{
-											"key": "Date",
-											"value": "Thu, 26 Aug 2021 09:29:51 GMT"
-										},
-										{
-											"key": "x-amzn-RequestId",
-											"value": "58cb001d-ec2a-4775-af32-950f041b0b00"
-										},
-										{
-											"key": "Access-Control-Allow-Origin",
-											"value": "*"
-										},
-										{
-											"key": "Content-Encoding",
-											"value": "gzip"
-										},
-										{
-											"key": "Access-Control-Allow-Headers",
-											"value": "Authorization,Content-Type,X-Amz-Date,X-Amz-Security-Token,X-Department,X-Country,X-Captcha,X-Socket-Id,x-dynatrace,x-dynatrace-application,x-dynatrace-origin-url,x-dtHealthCheck,X-dynaTrace-RequestState,x-dtpc,x-dtreferer,x-dtc,Cookie,X-Ruxit-Forwarded-For,referer"
-										},
-										{
-											"key": "x-amz-apigw-id",
-											"value": "EqvKfFI4liAFoaw="
-										},
-										{
-											"key": "Access-Control-Allow-Methods",
-											"value": "OPTIONS,HEAD,GET,POST,PUT,PATCH,DELETE"
-										},
-										{
-											"key": "X-Amzn-Trace-Id",
-											"value": "Root=1-61275f0f-4b6a18a25b913cf85bef606c;Sampled=0"
-										},
-										{
-											"key": "Access-Control-Max-Age",
-											"value": "7200"
-										},
-										{
-											"key": "X-Cache",
-											"value": "Miss from cloudfront"
-										},
-										{
-											"key": "Via",
-											"value": "1.1 1448f69604d5be1f9c9f0c64cfa90595.cloudfront.net (CloudFront)"
-										},
-										{
-											"key": "X-Amz-Cf-Pop",
-											"value": "IAD89-C1"
-										},
-										{
-											"key": "X-Amz-Cf-Id",
-											"value": "ooUd9X_WLmlSHGF9sdmqXoOIz_BVWB_d6BwzfS9joiVOBiD-PwENeg=="
-										}
-									],
-									"cookie": [],
-									"responseTime": null,
-									"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"coc\": \"56214138\",\n        \"vat_number\": null,\n        \"city\": \"Amsterdam\",\n        \"street\": null,\n        \"type\": \"Hoofdvestiging\",\n        \"street_number\": \"104\",\n        \"street_number_addition\": null,\n        \"name\": \"Linsey Sijmons Agency (LSA)\",\n        \"legal_form\": \"Eenmanszaak\",\n        \"last_update\": \"2021-03-17 00:00:00\",\n        \"created_at\": \"2021-08-09T15:07:09.000000Z\",\n        \"updated_at\": \"2021-08-09T15:07:09.000000Z\"\n    }\n}"
-								}
-							]
-						}
-					],
-					"id": "85ac8ca8-407e-4832-9fae-cdf31a3f65de"
-				},
-				{
 					"name": "/service-points",
 					"id": "09b3a796-0b14-40a0-8e20-1f04453f5027",
 					"protocolProfileBehavior": {
@@ -27815,6 +27422,694 @@
 								}
 							],
 							"id": "c8b519bf-58e1-4532-80c7-008afa1e817c"
+						},
+						{
+							"name": "system/departments/find-by-hostname",
+							"item": [
+								{
+									"name": "/system/departments/identify-by-hostname",
+									"id": "696d6583-f8b3-42ee-85cd-9362f5fa64f1",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "(Required) ",
+												"key": "Origin",
+												"value": "ea"
+											},
+											{
+												"description": "(Required) ",
+												"key": "X-Department",
+												"value": "ea"
+											},
+											{
+												"key": "Accept-Language",
+												"value": "ea"
+											}
+										],
+										"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+									},
+									"response": [
+										{
+											"id": "51fc6912-733d-408b-b83b-77c62bc320cd",
+											"name": "503 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Service Unavailable",
+											"code": 503,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+										},
+										{
+											"id": "8660cb51-eec5-4ed5-ab95-9043552fda8e",
+											"name": "429 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Too Many Requests",
+											"code": 429,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": ""
+										},
+										{
+											"id": "f1aa9741-e536-4fa7-b8d1-b25e7368e9bc",
+											"name": "500 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+										},
+										{
+											"id": "8847bb0b-3e8e-432b-8d07-31b3042382e1",
+											"name": "405 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Method Not Allowed",
+											"code": 405,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+										},
+										{
+											"id": "a2e99d3d-ceaa-4c84-8ca3-245df973db50",
+											"name": "404 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+										},
+										{
+											"id": "14356b47-d7b9-4b1e-aafa-dc9d3c64e96a",
+											"name": "200 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": ""
+										},
+										{
+											"id": "d5887e8c-a5b1-4d4b-a38d-472bb33082f3",
+											"name": "403 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+										},
+										{
+											"id": "71fd570b-cef1-4f0f-b9b5-fabcc1d0eedd",
+											"name": "401 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n\t\"status_code\": -17179722,\n\t\"message\": \"cillum\"\n}"
+										},
+										{
+											"id": "36060a04-8149-4c21-87be-e730a56dedbf",
+											"name": "400 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": ""
+										},
+										{
+											"id": "3a44e450-de92-463d-98f6-be682ffe3073",
+											"name": "422 response",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "(Required) ",
+														"key": "Origin",
+														"value": "ea"
+													},
+													{
+														"description": "(Required) ",
+														"key": "X-Department",
+														"value": "ea"
+													},
+													{
+														"key": "Accept-Language",
+														"value": "ea"
+													}
+												],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+											"code": 422,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/system/departments/identify-by-hostname",
+									"id": "b925f010-8e89-472b-926e-08a3a1d905a9",
+									"request": {
+										"method": "OPTIONS",
+										"header": [],
+										"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+									},
+									"response": [
+										{
+											"id": "f0a130db-b629-4d01-88ed-d7a4d2113fac",
+											"name": "200 response",
+											"originalRequest": {
+												"method": "OPTIONS",
+												"header": [],
+												"url": "{{baseUrl}}/system/departments/identify-by-hostname"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Origin",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Methods",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Max-Age",
+													"value": "ea"
+												},
+												{
+													"disabled": false,
+													"description": "",
+													"key": "Access-Control-Allow-Headers",
+													"value": "ea"
+												},
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{}"
+										}
+									]
+								}
+							],
+							"id": "6f73c15d-cdce-4541-afbb-a5e73bfb0ede"
 						},
 						{
 							"name": "{department}",
@@ -90037,7 +90332,7 @@
 	],
 	"variable": [
 		{
-			"id": "a6f6443a-cdf4-4b08-a19d-eedf282327df",
+			"id": "0cebe493-5149-4a77-8ffc-f9b07f7663c3",
 			"key": "baseUrl",
 			"value": "https://api.slim-surface-app.com"
 		}
